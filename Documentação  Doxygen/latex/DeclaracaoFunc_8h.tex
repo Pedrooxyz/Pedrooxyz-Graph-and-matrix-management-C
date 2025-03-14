@@ -1,0 +1,722 @@
+\doxysection{D\+:/1ano/2sem/eda/\+LESI\+\_\+\+EDA\+\_\+27960\+\_\+\+FINAL/\+LESI\+\_\+\+EDA\+\_\+27960\+\_\+\+FINAL/\+Declaracao\+Func.h File Reference}
+\hypertarget{DeclaracaoFunc_8h}{}\label{DeclaracaoFunc_8h}\index{D:/1ano/2sem/eda/LESI\_EDA\_27960\_FINAL/LESI\_EDA\_27960\_FINAL/DeclaracaoFunc.h@{D:/1ano/2sem/eda/LESI\_EDA\_27960\_FINAL/LESI\_EDA\_27960\_FINAL/DeclaracaoFunc.h}}
+
+
+Declaração das funções necessárias à realização do TP -\/ EDA.  
+
+
+{\ttfamily \#include "{}Estruturas\+Dados.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{DeclaracaoFunc_8h_a91bd98c9194388be0e89a9abad531bec}{Alterar\+Valor}} (\mbox{\hyperlink{structElemento}{Elemento}} \texorpdfstring{$\ast$}{*}matriz, int num\+Para\+Mudar, int num\+Novo)
+\begin{DoxyCompactList}\small\item\em Altera um valor específico em todos os elementos de uma matriz. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{DeclaracaoFunc_8h_a584b938c6d5a0679e8bf13e914a81ecf}{Insere\+Elemento}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}linha, int valor)
+\begin{DoxyCompactList}\small\item\em Insere um novo elemento contendo um número no final de uma linha da matriz. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{DeclaracaoFunc_8h_a1891711936bf2493e1442a9a9be9bfe4}{Insere\+Linha}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}matriz, int \texorpdfstring{$\ast$}{*}valores, int num\+Colunas)
+\begin{DoxyCompactList}\small\item\em Insere uma nova linha na matriz na lista ligada. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{DeclaracaoFunc_8h_a6aa5c0f5141b65bb9daa3133d98af9ea}{Inserir\+Coluna\+Fim}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}matriz, int \texorpdfstring{$\ast$}{*}valores\+Coluna, int tamanho)
+\begin{DoxyCompactList}\small\item\em Insere uma nova coluna no final de todas as linhas da matriz. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{DeclaracaoFunc_8h_a529c8d613519385107cbc6bd2c2d039d}{Inserir\+Coluna}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}matriz, int \texorpdfstring{$\ast$}{*}valores\+Coluna, int posicao)
+\begin{DoxyCompactList}\small\item\em Insere uma nova coluna na posição especificada em todas as linhas da matriz representada por uma lista ligada. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{DeclaracaoFunc_8h_a5217c4245d5ba74aa94124b483d25058}{Remove\+Linha}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}matriz, int pos)
+\begin{DoxyCompactList}\small\item\em Remove uma linha da lista ligada. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{DeclaracaoFunc_8h_a692d4dcae2f82fdff0c205f4f4940ae4}{Remover\+Coluna}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}matriz, int posicao)
+\begin{DoxyCompactList}\small\item\em Remove a coluna na posição especificada de todas as linhas da matriz. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{DeclaracaoFunc_8h_a11850e4a4f19d3adee6800c6acda9a1e}{Soma\+Maxima}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}matriz)
+\begin{DoxyCompactList}\small\item\em Calcula a soma dos valores máximos de cada linha em uma matriz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{DeclaracaoFunc_8h_ac8e7518c9f33f00ecff9b308b2224c0a}{Mostra\+Matriz}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}matriz)
+\begin{DoxyCompactList}\small\item\em Mostra a matriz. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{DeclaracaoFunc_8h_a18358590565d3970d14884fd5325402c}{Carregar\+Matriz}} (char \texorpdfstring{$\ast$}{*}nome\+Arquivo)
+\begin{DoxyCompactList}\small\item\em Carrega uma matriz a partir de um ficheiro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{DeclaracaoFunc_8h_a1a7f3d8e78b297c9197eca4f6ce5ff4e}{Mostrar\+Grafo}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g)
+\begin{DoxyCompactList}\small\item\em Mostra o grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{DeclaracaoFunc_8h_ab39112decaa297aa9ab2c7710f1175f3}{Insere\+Vertice}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}v, \mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Insere um vértice em um grafo existente. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{DeclaracaoFunc_8h_aacc500b9d770114ef6f6e72c53cda64f}{Inserir\+Adj}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, int origem, int destino, int peso, bool \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Insere uma adjacência em um grafo existente. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{DeclaracaoFunc_8h_acb1f35934dfc654b59a01bd498413bc1}{Onde\+Esta\+Vertice\+Grafo}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, int id\+Vertice)
+\begin{DoxyCompactList}\small\item\em Retorna um apontador para o vértice com o identificador especificado no grafo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{DeclaracaoFunc_8h_a39e35271c25d02bd7d6deb895eb566c6}{Adjacente\+Destruir}} (\mbox{\hyperlink{structAdj}{Adj}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structAdj}{Adj}})
+\begin{DoxyCompactList}\small\item\em Liberta a memória alocada para uma adjacência. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{DeclaracaoFunc_8h_a6d5d62a6a56b01eae1936bcff7866589}{Elimina\+Adj}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, int origem, int cod\+Adj, bool \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Elimina uma adjacência de um vértice em um grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAdj}{Adj}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{DeclaracaoFunc_8h_a7babc5cb568b8801ed2e6d6447750d86}{Elimina\+Todas\+Adj}} (\mbox{\hyperlink{structAdj}{Adj}} \texorpdfstring{$\ast$}{*}lista\+Adj, bool \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Elimina todas as adjacências de uma lista de adjacências. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{DeclaracaoFunc_8h_a90745316b4325c93dd1c9aad9ede3809}{Destroi\+Vertice}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Liberta a memória alocada para um vértice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{DeclaracaoFunc_8h_a2fba3197dbdbe7205becd2fa3f1db8c8}{Elimina\+Vertice}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int cod\+Vertice, bool \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Elimina um vértice e suas adjacências de um grafo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{DeclaracaoFunc_8h_ad5fb984955103c5d054f54408ebc4a44}{Destruir\+Grafo}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo)
+\begin{DoxyCompactList}\small\item\em Liberta a memória alocada para um grafo e todos os seus vértices e adjacências. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{DeclaracaoFunc_8h_aab7a59a1c1a7e6baea7d228ea212f55e}{Guardar\+Grafo}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, char \texorpdfstring{$\ast$}{*}nome\+Ficheiro)
+\begin{DoxyCompactList}\small\item\em Guarda um grafo em um ficheiro binário. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{DeclaracaoFunc_8h_aee143019ae6eb9187ffb635fadef1ecc}{Construir\+Grafo}} (char \texorpdfstring{$\ast$}{*}nome\+Ficheiro)
+\begin{DoxyCompactList}\small\item\em Constrói um grafo a partir de um ficheiro contendo uma matriz de adjacência. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{DeclaracaoFunc_8h_aa153ed95369abf405b82110f08512605}{Libertar\+Matriz}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}matriz)
+\begin{DoxyCompactList}\small\item\em Liberta a memória alocada para uma matriz de adjacência. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{DeclaracaoFunc_8h_a75f192e6bef6e47c69243e078a3cea9c}{Encontrar\+Caminhos}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int origem, int destino)
+\begin{DoxyCompactList}\small\item\em Encontra caminhos entre dois vértices em um grafo usando DFT. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{DeclaracaoFunc_8h_a46db620e4db603d13c4e19d74cf7cf51}{Busca\+Profundidade}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertice, \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}destino, int \texorpdfstring{$\ast$}{*}caminho, int pos)
+\begin{DoxyCompactList}\small\item\em Realiza uma busca DFT (em profundidade) a partir de um vértice em um grafo para encontrar um caminho até um vértice destino. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{DeclaracaoFunc_8h_a08f39c3726f52a117bed65fd28800f63}{Inicializar\+Visitados}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo)
+\begin{DoxyCompactList}\small\item\em Inicializa todos os vértices do grafo como não visitados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{DeclaracaoFunc_8h_a15e7e0c2691517887ffe9a759d18d29c}{Mostrar\+Caminho}} (int \texorpdfstring{$\ast$}{*}caminho, int tamanho)
+\begin{DoxyCompactList}\small\item\em Mostra o caminho encontrado no formato de uma lista de vértices. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{DeclaracaoFunc_8h_a85ae747e4fa1b8dc08012d9b89078229}{Exportar\+Caminho\+Para\+Ficheiro}} (int \texorpdfstring{$\ast$}{*}caminho, int tamanho)
+\begin{DoxyCompactList}\small\item\em Exporta o caminho encontrado para um ficheiro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{DeclaracaoFunc_8h_a874fe4ea300fb8b9302367b6478a9cdf}{Mostra\+Soma\+ECaminho}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int origem, int destino)
+\begin{DoxyCompactList}\small\item\em Mostra os caminhos possíveis de um vértice de origem a um vértice de destino no grafo, a soma máxima dos valores dos vértices nesses caminhos, e exporta essas informações para um ficheiro. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{DeclaracaoFunc_8h_acfb587123f9eb8d793fb2341bec7da78}{Soma\+Maxima\+Caminhos}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int \texorpdfstring{$\ast$}{*}n\+Linha)
+\begin{DoxyCompactList}\small\item\em Calcula a soma máxima dos valores dos vértices em todos os caminhos lidos de um ficheiro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{DeclaracaoFunc_8h_a405432d783716afca8ecbe936799eb86}{Imprimir\+Linhas}} (char \texorpdfstring{$\ast$}{*}nome\+Ficheiro, int \texorpdfstring{$\ast$}{*}linhas, int tamanho)
+\begin{DoxyCompactList}\small\item\em Imprime no ecrã as linhas especificadas de um ficheiro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Declaração das funções necessárias à realização do TP -\/ EDA. 
+
+\begin{DoxyAuthor}{Author}
+Pedro\+Ribeiro nº27960 LESI 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{DeclaracaoFunc_8h_a39e35271c25d02bd7d6deb895eb566c6}\label{DeclaracaoFunc_8h_a39e35271c25d02bd7d6deb895eb566c6} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!AdjacenteDestruir@{AdjacenteDestruir}}
+\index{AdjacenteDestruir@{AdjacenteDestruir}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{AdjacenteDestruir()}{AdjacenteDestruir()}}
+{\footnotesize\ttfamily bool Adjacente\+Destruir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAdj}{Adj}} \texorpdfstring{$\ast$}{*}}]{Adj }\end{DoxyParamCaption})}
+
+
+
+Liberta a memória alocada para uma adjacência. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{structAdj}{Adj}} & Apontador para a adjacência a ser destruída. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a destruição foi bem-\/sucedida, false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_a91bd98c9194388be0e89a9abad531bec}\label{DeclaracaoFunc_8h_a91bd98c9194388be0e89a9abad531bec} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!AlterarValor@{AlterarValor}}
+\index{AlterarValor@{AlterarValor}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{AlterarValor()}{AlterarValor()}}
+{\footnotesize\ttfamily bool Alterar\+Valor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structElemento}{Elemento}} \texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int}]{num\+Para\+Mudar,  }\item[{int}]{num\+Novo }\end{DoxyParamCaption})}
+
+
+
+Altera um valor específico em todos os elementos de uma matriz. 
+
+Esta função percorre todos os elementos da lista ligada e substitui um valor específico por outro.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Um apontador para o início da lista ligada. \\
+\hline
+{\em num\+Para\+Mudar} & O valor a ser alterado em todos os elementos da matriz. \\
+\hline
+{\em num\+Novo} & O novo valor que substituirá o valor a ser alterado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se pelo menos um valor foi alterado com sucesso, false se a matriz estiver vazia. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_a46db620e4db603d13c4e19d74cf7cf51}\label{DeclaracaoFunc_8h_a46db620e4db603d13c4e19d74cf7cf51} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!BuscaProfundidade@{BuscaProfundidade}}
+\index{BuscaProfundidade@{BuscaProfundidade}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{BuscaProfundidade()}{BuscaProfundidade()}}
+{\footnotesize\ttfamily bool Busca\+Profundidade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertice,  }\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{destino,  }\item[{int \texorpdfstring{$\ast$}{*}}]{caminho,  }\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Realiza uma busca DFT (em profundidade) a partir de um vértice em um grafo para encontrar um caminho até um vértice destino. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o grafo onde a busca será realizada. \\
+\hline
+{\em vertice} & Apontador para o vértice atual. \\
+\hline
+{\em destino} & Apontador para o vértice destino. \\
+\hline
+{\em caminho} & Apontador que armazena o caminho encontrado até o momento. \\
+\hline
+{\em pos} & Posição atual no vetor de caminho. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se um caminho até o destino foi encontrado, false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_a18358590565d3970d14884fd5325402c}\label{DeclaracaoFunc_8h_a18358590565d3970d14884fd5325402c} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!CarregarMatriz@{CarregarMatriz}}
+\index{CarregarMatriz@{CarregarMatriz}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{CarregarMatriz()}{CarregarMatriz()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*} Carregar\+Matriz (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro }\end{DoxyParamCaption})}
+
+
+
+Carrega uma matriz a partir de um ficheiro. 
+
+Esta função lê os valores de uma matriz armazenada em um ficheiro e cria uma lista ligada com essa matriz. Cada linha do ficheiro representa uma linha da matriz, com os valores separados por ponto e vírgula (;).
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Ficheiro} & O nome do ficheiro que contém os dados da matriz a ser carregada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um apontador para a lista ligada que representa a matriz carregada, ou NULL se houver falha ao abrir o ficheiro.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Esta função assume que o arquivo está no formato correto, com valores separados por ponto e vírgula e uma linha por linha. Se ocorrer algum erro durante a leitura do ficheiro ou alocação de memória, a função retorna NULL. 
+\end{DoxyNote}
+\Hypertarget{DeclaracaoFunc_8h_aee143019ae6eb9187ffb635fadef1ecc}\label{DeclaracaoFunc_8h_aee143019ae6eb9187ffb635fadef1ecc} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!ConstruirGrafo@{ConstruirGrafo}}
+\index{ConstruirGrafo@{ConstruirGrafo}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{ConstruirGrafo()}{ConstruirGrafo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Construir\+Grafo (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro }\end{DoxyParamCaption})}
+
+
+
+Constrói um grafo a partir de um ficheiro contendo uma matriz de adjacência. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Ficheiro} & Nome do ficheiro contendo a matriz de adjacência. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o grafo construído, ou NULL em caso de erro. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_a90745316b4325c93dd1c9aad9ede3809}\label{DeclaracaoFunc_8h_a90745316b4325c93dd1c9aad9ede3809} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!DestroiVertice@{DestroiVertice}}
+\index{DestroiVertice@{DestroiVertice}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{DestroiVertice()}{DestroiVertice()}}
+{\footnotesize\ttfamily bool Destroi\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})}
+
+
+
+Liberta a memória alocada para um vértice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Apontador para o vértice a ser destruído. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a destruição foi bem-\/sucedida, false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_ad5fb984955103c5d054f54408ebc4a44}\label{DeclaracaoFunc_8h_ad5fb984955103c5d054f54408ebc4a44} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!DestruirGrafo@{DestruirGrafo}}
+\index{DestruirGrafo@{DestruirGrafo}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{DestruirGrafo()}{DestruirGrafo()}}
+{\footnotesize\ttfamily bool Destruir\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo }\end{DoxyParamCaption})}
+
+
+
+Liberta a memória alocada para um grafo e todos os seus vértices e adjacências. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o grafo a ser destruído. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a destruição foi bem-\/sucedida, false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_a6d5d62a6a56b01eae1936bcff7866589}\label{DeclaracaoFunc_8h_a6d5d62a6a56b01eae1936bcff7866589} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!EliminaAdj@{EliminaAdj}}
+\index{EliminaAdj@{EliminaAdj}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{EliminaAdj()}{EliminaAdj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Elimina\+Adj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{origem,  }\item[{int}]{destino,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Elimina uma adjacência de um vértice em um grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo onde a adjacência será eliminada. \\
+\hline
+{\em origem} & Identificador do vértice de origem da adjacência. \\
+\hline
+{\em destino} & Identificador do vértice de destino da adjacência. \\
+\hline
+{\em res} & Apontador para a variável de resultado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o grafo atualizado. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_a7babc5cb568b8801ed2e6d6447750d86}\label{DeclaracaoFunc_8h_a7babc5cb568b8801ed2e6d6447750d86} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!EliminaTodasAdj@{EliminaTodasAdj}}
+\index{EliminaTodasAdj@{EliminaTodasAdj}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{EliminaTodasAdj()}{EliminaTodasAdj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAdj}{Adj}} \texorpdfstring{$\ast$}{*} Elimina\+Todas\+Adj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAdj}{Adj}} \texorpdfstring{$\ast$}{*}}]{lista\+Adj,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Elimina todas as adjacências de uma lista de adjacências. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista\+Adj} & Apontador para a lista de adjacências a serem eliminadas. \\
+\hline
+{\em res} & Apontador para a variável de resultado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador nulo, indicando que todas as adjacências foram eliminadas. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_a2fba3197dbdbe7205becd2fa3f1db8c8}\label{DeclaracaoFunc_8h_a2fba3197dbdbe7205becd2fa3f1db8c8} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!EliminaVertice@{EliminaVertice}}
+\index{EliminaVertice@{EliminaVertice}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{EliminaVertice()}{EliminaVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Elimina\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{cod\+Vertice,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Elimina um vértice e suas adjacências de um grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o grafo onde o vértice será eliminado. \\
+\hline
+{\em cod\+Vertice} & Identificador do vértice a ser eliminado. \\
+\hline
+{\em res} & Apontador para a variável de resultado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o grafo atualizado. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_a75f192e6bef6e47c69243e078a3cea9c}\label{DeclaracaoFunc_8h_a75f192e6bef6e47c69243e078a3cea9c} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!EncontrarCaminhos@{EncontrarCaminhos}}
+\index{EncontrarCaminhos@{EncontrarCaminhos}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{EncontrarCaminhos()}{EncontrarCaminhos()}}
+{\footnotesize\ttfamily bool Encontrar\+Caminhos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{origem,  }\item[{int}]{destino }\end{DoxyParamCaption})}
+
+
+
+Encontra caminhos entre dois vértices em um grafo usando DFT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o grafo onde os caminhos serão buscados. \\
+\hline
+{\em origem} & Identificador do vértice de origem. \\
+\hline
+{\em destino} & Identificador do vértice de destino. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se algum caminho foi encontrado, false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_a85ae747e4fa1b8dc08012d9b89078229}\label{DeclaracaoFunc_8h_a85ae747e4fa1b8dc08012d9b89078229} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!ExportarCaminhoParaFicheiro@{ExportarCaminhoParaFicheiro}}
+\index{ExportarCaminhoParaFicheiro@{ExportarCaminhoParaFicheiro}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{ExportarCaminhoParaFicheiro()}{ExportarCaminhoParaFicheiro()}}
+{\footnotesize\ttfamily int Exportar\+Caminho\+Para\+Ficheiro (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{caminho,  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Exporta o caminho encontrado para um ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caminho} & Apontador contendo os identificadores dos vértices no caminho encontrado. \\
+\hline
+{\em tamanho} & O número de vértices no caminho. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Retorna 1 se o caminho foi exportado com sucesso, -\/1 se houve erro na abertura do ficheiro. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_aab7a59a1c1a7e6baea7d228ea212f55e}\label{DeclaracaoFunc_8h_aab7a59a1c1a7e6baea7d228ea212f55e} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!GuardarGrafo@{GuardarGrafo}}
+\index{GuardarGrafo@{GuardarGrafo}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{GuardarGrafo()}{GuardarGrafo()}}
+{\footnotesize\ttfamily bool Guardar\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro }\end{DoxyParamCaption})}
+
+
+
+Guarda um grafo em um ficheiro binário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & apontador para o grafo a ser salvo. \\
+\hline
+{\em nome\+Ficheiro} & Nome do ficheiro binário onde o grafo será guardado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se o grafo foi guardado com sucesso, false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_a405432d783716afca8ecbe936799eb86}\label{DeclaracaoFunc_8h_a405432d783716afca8ecbe936799eb86} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!ImprimirLinhas@{ImprimirLinhas}}
+\index{ImprimirLinhas@{ImprimirLinhas}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{ImprimirLinhas()}{ImprimirLinhas()}}
+{\footnotesize\ttfamily void Imprimir\+Linhas (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro,  }\item[{int \texorpdfstring{$\ast$}{*}}]{linhas,  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Imprime no ecrã as linhas especificadas de um ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Ficheiro} & O nome do ficheiro a ser lido. \\
+\hline
+{\em linhas} & Um apontador contendo os números das linhas a serem impressas. \\
+\hline
+{\em tamanho} & O tamanho do apontador de linhas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{DeclaracaoFunc_8h_a08f39c3726f52a117bed65fd28800f63}\label{DeclaracaoFunc_8h_a08f39c3726f52a117bed65fd28800f63} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!InicializarVisitados@{InicializarVisitados}}
+\index{InicializarVisitados@{InicializarVisitados}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{InicializarVisitados()}{InicializarVisitados()}}
+{\footnotesize\ttfamily bool Inicializar\+Visitados (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo }\end{DoxyParamCaption})}
+
+
+
+Inicializa todos os vértices do grafo como não visitados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o grafo que terá seus vértices inicializados. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{DeclaracaoFunc_8h_a584b938c6d5a0679e8bf13e914a81ecf}\label{DeclaracaoFunc_8h_a584b938c6d5a0679e8bf13e914a81ecf} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!InsereElemento@{InsereElemento}}
+\index{InsereElemento@{InsereElemento}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{InsereElemento()}{InsereElemento()}}
+{\footnotesize\ttfamily bool Insere\+Elemento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}}]{linha,  }\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+Insere um novo elemento contendo um número no final de uma linha da matriz. 
+
+Esta função aloca memória para um novo elemento da lista ligada e atribui o valor especificado a ele. O novo elemento é inserido no final da linha especificada.
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & Um apontador para a linha onde o novo elemento será inserido. \\
+\hline
+{\em valor} & O valor a ser atribuído ao novo elemento. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se o novo elemento foi inserido com sucesso, false se a alocação de memória falhou. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_a1891711936bf2493e1442a9a9be9bfe4}\label{DeclaracaoFunc_8h_a1891711936bf2493e1442a9a9be9bfe4} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!InsereLinha@{InsereLinha}}
+\index{InsereLinha@{InsereLinha}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{InsereLinha()}{InsereLinha()}}
+{\footnotesize\ttfamily bool Insere\+Linha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int \texorpdfstring{$\ast$}{*}}]{valores,  }\item[{int}]{num\+Colunas }\end{DoxyParamCaption})}
+
+
+
+Insere uma nova linha na matriz na lista ligada. 
+
+Esta função aloca memória para uma nova linha da matriz e insere os valores especificados nessa linha. A nova linha é adicionada ao final da matriz.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Um apontador para o apontaador do início da lista ligada. \\
+\hline
+{\em valores} & Um array de inteiros contendo os valores a serem inseridos na nova linha. \\
+\hline
+{\em num\+Colunas} & O número de colunas na nova linha. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a nova linha foi inserida com sucesso, false se houve falha na alocação de memória. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_ab39112decaa297aa9ab2c7710f1175f3}\label{DeclaracaoFunc_8h_ab39112decaa297aa9ab2c7710f1175f3} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!InsereVertice@{InsereVertice}}
+\index{InsereVertice@{InsereVertice}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{InsereVertice()}{InsereVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Insere\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{v,  }\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Insere um vértice em um grafo existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Apontador para o vértice a ser inserido. \\
+\hline
+{\em grafo} & Apontador para o grafo onde o vértice será inserido. \\
+\hline
+{\em res} & Apontador para a variável de resultado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o grafo atualizado. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_aacc500b9d770114ef6f6e72c53cda64f}\label{DeclaracaoFunc_8h_aacc500b9d770114ef6f6e72c53cda64f} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!InserirAdj@{InserirAdj}}
+\index{InserirAdj@{InserirAdj}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{InserirAdj()}{InserirAdj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Inserir\+Adj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{origem,  }\item[{int}]{destino,  }\item[{int}]{peso,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Insere uma adjacência em um grafo existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo onde a adjacência será inserida. \\
+\hline
+{\em origem} & Identificador do vértice de origem da adjacência. \\
+\hline
+{\em destino} & Identificador do vértice de destino da adjacência. \\
+\hline
+{\em peso} & Peso da aresta. \\
+\hline
+{\em res} & Apontador para a variável de resultado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o grafo atualizado. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_a529c8d613519385107cbc6bd2c2d039d}\label{DeclaracaoFunc_8h_a529c8d613519385107cbc6bd2c2d039d} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!InserirColuna@{InserirColuna}}
+\index{InserirColuna@{InserirColuna}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{InserirColuna()}{InserirColuna()}}
+{\footnotesize\ttfamily bool Inserir\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int \texorpdfstring{$\ast$}{*}}]{valores\+Coluna,  }\item[{int}]{posicao }\end{DoxyParamCaption})}
+
+
+
+Insere uma nova coluna na posição especificada em todas as linhas da matriz representada por uma lista ligada. 
+
+Esta função percorre todas as linhas da matriz e insere os valores especificados como uma nova coluna na posição indicada.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Um apontador para o início da lista ligada que representa a matriz. \\
+\hline
+{\em valores\+Coluna} & Um array de inteiros que contem os valores a serem inseridos como uma nova coluna. \\
+\hline
+{\em posicao} & A posição na qual a nova coluna será inserida.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a nova coluna foi inserida com sucesso em todas as linhas, false se houve falha na alocação de memória. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_a6aa5c0f5141b65bb9daa3133d98af9ea}\label{DeclaracaoFunc_8h_a6aa5c0f5141b65bb9daa3133d98af9ea} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!InserirColunaFim@{InserirColunaFim}}
+\index{InserirColunaFim@{InserirColunaFim}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{InserirColunaFim()}{InserirColunaFim()}}
+{\footnotesize\ttfamily bool Inserir\+Coluna\+Fim (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int \texorpdfstring{$\ast$}{*}}]{valores\+Coluna,  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Insere uma nova coluna no final de todas as linhas da matriz. 
+
+Esta função percorre todas as linhas da matriz e insere os valores especificados como uma nova coluna no final de cada linha.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Um apontador para o início da lista ligada que representa a matriz. \\
+\hline
+{\em valores\+Coluna} & Um array de inteiros que contem os valores a serem inseridos como uma nova coluna. \\
+\hline
+{\em tamanho} & O número de elementos no array de valores\+Coluna. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{DeclaracaoFunc_8h_aa153ed95369abf405b82110f08512605}\label{DeclaracaoFunc_8h_aa153ed95369abf405b82110f08512605} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!LibertarMatriz@{LibertarMatriz}}
+\index{LibertarMatriz@{LibertarMatriz}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{LibertarMatriz()}{LibertarMatriz()}}
+{\footnotesize\ttfamily bool Libertar\+Matriz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}}]{matriz }\end{DoxyParamCaption})}
+
+
+
+Liberta a memória alocada para uma matriz de adjacência. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Apontador para a estrutura de dados representando a matriz. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{DeclaracaoFunc_8h_ac8e7518c9f33f00ecff9b308b2224c0a}\label{DeclaracaoFunc_8h_ac8e7518c9f33f00ecff9b308b2224c0a} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!MostraMatriz@{MostraMatriz}}
+\index{MostraMatriz@{MostraMatriz}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{MostraMatriz()}{MostraMatriz()}}
+{\footnotesize\ttfamily void Mostra\+Matriz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}}]{matriz }\end{DoxyParamCaption})}
+
+
+
+Mostra a matriz. 
+
+Esta função percorre todas as linhas da matriz e imprime os elementos de cada linha na saída padrão.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Um apontador para o início da lista ligada que representa a matriz. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{DeclaracaoFunc_8h_a15e7e0c2691517887ffe9a759d18d29c}\label{DeclaracaoFunc_8h_a15e7e0c2691517887ffe9a759d18d29c} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!MostrarCaminho@{MostrarCaminho}}
+\index{MostrarCaminho@{MostrarCaminho}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{MostrarCaminho()}{MostrarCaminho()}}
+{\footnotesize\ttfamily void Mostrar\+Caminho (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{caminho,  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Mostra o caminho encontrado no formato de uma lista de vértices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caminho} & Apontador que contem os identificadores dos vértices no caminho encontrado. \\
+\hline
+{\em tamanho} & O número de vértices no caminho. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{DeclaracaoFunc_8h_a1a7f3d8e78b297c9197eca4f6ce5ff4e}\label{DeclaracaoFunc_8h_a1a7f3d8e78b297c9197eca4f6ce5ff4e} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!MostrarGrafo@{MostrarGrafo}}
+\index{MostrarGrafo@{MostrarGrafo}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{MostrarGrafo()}{MostrarGrafo()}}
+{\footnotesize\ttfamily void Mostrar\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g }\end{DoxyParamCaption})}
+
+
+
+Mostra o grafo. 
+
+Esta função imprime na tela a representação do grafo, mostrando os vértices e as suas adjacências.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Ponteiro para o grafo a ser mostrado. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{DeclaracaoFunc_8h_a874fe4ea300fb8b9302367b6478a9cdf}\label{DeclaracaoFunc_8h_a874fe4ea300fb8b9302367b6478a9cdf} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!MostraSomaECaminho@{MostraSomaECaminho}}
+\index{MostraSomaECaminho@{MostraSomaECaminho}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{MostraSomaECaminho()}{MostraSomaECaminho()}}
+{\footnotesize\ttfamily void Mostra\+Soma\+ECaminho (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{origem,  }\item[{int}]{destino }\end{DoxyParamCaption})}
+
+
+
+Mostra os caminhos possíveis de um vértice de origem a um vértice de destino no grafo, a soma máxima dos valores dos vértices nesses caminhos, e exporta essas informações para um ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o grafo onde os vértices estão localizados. \\
+\hline
+{\em origem} & Identificador do vértice de origem. \\
+\hline
+{\em destino} & Identificador do vértice de destino. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{DeclaracaoFunc_8h_acb1f35934dfc654b59a01bd498413bc1}\label{DeclaracaoFunc_8h_acb1f35934dfc654b59a01bd498413bc1} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!OndeEstaVerticeGrafo@{OndeEstaVerticeGrafo}}
+\index{OndeEstaVerticeGrafo@{OndeEstaVerticeGrafo}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{OndeEstaVerticeGrafo()}{OndeEstaVerticeGrafo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Onde\+Esta\+Vertice\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{id\+Vertice }\end{DoxyParamCaption})}
+
+
+
+Retorna um apontador para o vértice com o identificador especificado no grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo onde será realizada a busca. \\
+\hline
+{\em id\+Vertice} & Identificador do vértice a ser procurado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o vértice encontrado, ou NULL se não encontrado. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_a5217c4245d5ba74aa94124b483d25058}\label{DeclaracaoFunc_8h_a5217c4245d5ba74aa94124b483d25058} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!RemoveLinha@{RemoveLinha}}
+\index{RemoveLinha@{RemoveLinha}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{RemoveLinha()}{RemoveLinha()}}
+{\footnotesize\ttfamily bool Remove\+Linha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Remove uma linha da lista ligada. 
+
+Esta função remove a linha na posição especificada da matriz.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Um apontador para o apontador do início da lista ligada. \\
+\hline
+{\em pos} & A posição da linha a ser removida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a linha foi removida com sucesso, false se a posição especificada for inválida ou se a matriz estiver vazia. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_a692d4dcae2f82fdff0c205f4f4940ae4}\label{DeclaracaoFunc_8h_a692d4dcae2f82fdff0c205f4f4940ae4} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!RemoverColuna@{RemoverColuna}}
+\index{RemoverColuna@{RemoverColuna}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{RemoverColuna()}{RemoverColuna()}}
+{\footnotesize\ttfamily bool Remover\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int}]{posicao }\end{DoxyParamCaption})}
+
+
+
+Remove a coluna na posição especificada de todas as linhas da matriz. 
+
+Esta função percorre todas as linhas da matriz e remove o elemento na posição indicada.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Um apontador para o início da lista ligada que representa a matriz. \\
+\hline
+{\em posicao} & A posição da coluna a ser removida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a coluna foi removida com sucesso de todas as linhas, false se a posição especificada for inválida ou se a matriz estiver vazia. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_a11850e4a4f19d3adee6800c6acda9a1e}\label{DeclaracaoFunc_8h_a11850e4a4f19d3adee6800c6acda9a1e} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!SomaMaxima@{SomaMaxima}}
+\index{SomaMaxima@{SomaMaxima}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{SomaMaxima()}{SomaMaxima()}}
+{\footnotesize\ttfamily int Soma\+Maxima (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}}]{matriz }\end{DoxyParamCaption})}
+
+
+
+Calcula a soma dos valores máximos de cada linha em uma matriz. 
+
+Esta função percorre todas as linhas da matriz e calcula a soma dos valores máximos de cada linha.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Um apontador para o início da lista ligada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A soma dos valores máximos de todas as linhas da matriz, ou -\/1 se a matriz estiver vazia. 
+\end{DoxyReturn}
+\Hypertarget{DeclaracaoFunc_8h_acfb587123f9eb8d793fb2341bec7da78}\label{DeclaracaoFunc_8h_acfb587123f9eb8d793fb2341bec7da78} 
+\index{DeclaracaoFunc.h@{DeclaracaoFunc.h}!SomaMaximaCaminhos@{SomaMaximaCaminhos}}
+\index{SomaMaximaCaminhos@{SomaMaximaCaminhos}!DeclaracaoFunc.h@{DeclaracaoFunc.h}}
+\doxysubsubsection{\texorpdfstring{SomaMaximaCaminhos()}{SomaMaximaCaminhos()}}
+{\footnotesize\ttfamily int Soma\+Maxima\+Caminhos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int \texorpdfstring{$\ast$}{*}}]{n\+Linha }\end{DoxyParamCaption})}
+
+
+
+Calcula a soma máxima dos valores dos vértices em todos os caminhos lidos de um ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o grafo onde os vértices estão localizados. \\
+\hline
+{\em n\+Linha} & Apontador para armazenar os índices das linhas com a maior soma. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int A soma máxima dos valores dos vértices nos caminhos, ou -\/1 se ocorrer um erro. 
+\end{DoxyReturn}

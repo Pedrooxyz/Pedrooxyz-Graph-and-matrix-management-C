@@ -1,0 +1,110 @@
+\doxysection{Declaracao\+Func.\+h}
+\hypertarget{DeclaracaoFunc_8h_source}{}\label{DeclaracaoFunc_8h_source}\index{D:/1ano/2sem/eda/LESI\_EDA\_27960\_FINAL/LESI\_EDA\_27960\_FINAL/DeclaracaoFunc.h@{D:/1ano/2sem/eda/LESI\_EDA\_27960\_FINAL/LESI\_EDA\_27960\_FINAL/DeclaracaoFunc.h}}
+\mbox{\hyperlink{DeclaracaoFunc_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*****************************************************************/}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{LESI__EDA__27960__FINAL_2EstruturasDados_8h}{EstruturasDados.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#pragma\ region\ Declaração\ das\ funções\ da\ Fase\ 1}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{comment}{//Altera\ o\ valor\ de\ um\ elemento\ da\ matriz}}
+\DoxyCodeLine{00015\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a91bd98c9194388be0e89a9abad531bec}{AlterarValor}}(\mbox{\hyperlink{structElemento}{Elemento}}*\ matriz,\ \textcolor{keywordtype}{int}\ numParaMudar,\ \textcolor{keywordtype}{int}\ numNovo);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{comment}{//Insere\ um\ elemento\ no\ final\ da\ linha\ da\ matriz.}}
+\DoxyCodeLine{00018\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a584b938c6d5a0679e8bf13e914a81ecf}{InsereElemento}}(\mbox{\hyperlink{structLinha}{Linha}}*\ linha,\ \textcolor{keywordtype}{int}\ valor);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{//Insere\ uma\ nova\ linha\ na\ matriz.}}
+\DoxyCodeLine{00021\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a1891711936bf2493e1442a9a9be9bfe4}{InsereLinha}}(\mbox{\hyperlink{structLinha}{Linha}}**\ matriz,\ \textcolor{keywordtype}{int}*\ valores,\ \textcolor{keywordtype}{int}\ numColunas);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{comment}{//Insere\ uma\ nova\ coluna\ no\ final\ de\ todas\ as\ linhas\ da\ matriz.}}
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a6aa5c0f5141b65bb9daa3133d98af9ea}{InserirColunaFim}}(\mbox{\hyperlink{structLinha}{Linha}}*\ matriz,\ \textcolor{keywordtype}{int}*\ valoresColuna,\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{comment}{//Insere\ uma\ nova\ coluna\ em\ uma\ posição\ específica\ de\ todas\ as\ linhas\ da\ matriz.}}
+\DoxyCodeLine{00027\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a529c8d613519385107cbc6bd2c2d039d}{InserirColuna}}(\mbox{\hyperlink{structLinha}{Linha}}*\ matriz,\ \textcolor{keywordtype}{int}*\ valoresColuna,\ \textcolor{keywordtype}{int}\ posicao);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{comment}{//Remove\ uma\ linha\ da\ matriz.}}
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a5217c4245d5ba74aa94124b483d25058}{RemoveLinha}}(\mbox{\hyperlink{structLinha}{Linha}}**\ matriz,\ \textcolor{keywordtype}{int}\ pos);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{comment}{//Remove\ uma\ coluna\ de\ todas\ as\ linhas\ da\ matriz.}}
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a692d4dcae2f82fdff0c205f4f4940ae4}{RemoverColuna}}(\mbox{\hyperlink{structLinha}{Linha}}*\ matriz,\ \textcolor{keywordtype}{int}\ posicao);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{comment}{//Calcula\ a\ soma\ máxima\ dos\ valores\ na\ matriz.}}
+\DoxyCodeLine{00036\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a11850e4a4f19d3adee6800c6acda9a1e}{SomaMaxima}}(\mbox{\hyperlink{structLinha}{Linha}}*\ matriz);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{comment}{//Mostra\ os\ elementos\ da\ matriz\ na\ saída\ padrão.}}
+\DoxyCodeLine{00039\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{DeclaracaoFunc_8h_ac8e7518c9f33f00ecff9b308b2224c0a}{MostraMatriz}}(\mbox{\hyperlink{structLinha}{Linha}}*\ matriz);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{comment}{//Carrega\ a\ matriz\ no\ ficheiro}}
+\DoxyCodeLine{00042\ \mbox{\hyperlink{structLinha}{Linha}}*\ \mbox{\hyperlink{DeclaracaoFunc_8h_a18358590565d3970d14884fd5325402c}{CarregarMatriz}}(\textcolor{keywordtype}{char}*\ nomeArquivo);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#pragma\ region\ Declaração\ das\ funções\ da\ Fase\ 2}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{comment}{//Mostra\ os\ elementos\ do\ grafo\ na\ saída\ padrão.}}
+\DoxyCodeLine{00049\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a1a7f3d8e78b297c9197eca4f6ce5ff4e}{MostrarGrafo}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ g);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{comment}{//Insere\ um\ novo\ vértice\ no\ grafo.}}
+\DoxyCodeLine{00052\ \mbox{\hyperlink{structGrafo}{Grafo}}*\ \mbox{\hyperlink{DeclaracaoFunc_8h_ab39112decaa297aa9ab2c7710f1175f3}{InsereVertice}}(\mbox{\hyperlink{structVertice}{Vertice}}*\ v,\ \mbox{\hyperlink{structGrafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}*\ res);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{comment}{//Insere\ uma\ nova\ adjacência\ no\ grafo.}}
+\DoxyCodeLine{00055\ \mbox{\hyperlink{structGrafo}{Grafo}}*\ \mbox{\hyperlink{DeclaracaoFunc_8h_aacc500b9d770114ef6f6e72c53cda64f}{InserirAdj}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ g,\ \textcolor{keywordtype}{int}\ origem,\ \textcolor{keywordtype}{int}\ destino,\ \textcolor{keywordtype}{int}\ peso,\ \textcolor{keywordtype}{bool}*\ res);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{comment}{//Procura\ e\ retorna\ um\ vértice\ com\ o\ ID\ especificado\ no\ grafo.}}
+\DoxyCodeLine{00058\ \mbox{\hyperlink{structVertice}{Vertice}}*\ \mbox{\hyperlink{DeclaracaoFunc_8h_acb1f35934dfc654b59a01bd498413bc1}{OndeEstaVerticeGrafo}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ g,\ \textcolor{keywordtype}{int}\ idVertice);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{comment}{//Destroi\ a\ estrutura\ de\ dados\ representando\ uma\ adjacência.}}
+\DoxyCodeLine{00061\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a39e35271c25d02bd7d6deb895eb566c6}{AdjacenteDestruir}}(\mbox{\hyperlink{structAdj}{Adj}}*\ \mbox{\hyperlink{structAdj}{Adj}});}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{comment}{//Elimina\ uma\ adjacência\ específica\ do\ grafo.}}
+\DoxyCodeLine{00064\ \mbox{\hyperlink{structGrafo}{Grafo}}*\ \mbox{\hyperlink{DeclaracaoFunc_8h_a6d5d62a6a56b01eae1936bcff7866589}{EliminaAdj}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ g,\ \textcolor{keywordtype}{int}\ origem,\ \textcolor{keywordtype}{int}\ codAdj,\ \textcolor{keywordtype}{bool}*\ res);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{comment}{//Elimina\ todas\ as\ adjacências\ de\ um\ vértice.}}
+\DoxyCodeLine{00067\ \mbox{\hyperlink{structAdj}{Adj}}*\ \mbox{\hyperlink{DeclaracaoFunc_8h_a7babc5cb568b8801ed2e6d6447750d86}{EliminaTodasAdj}}(\mbox{\hyperlink{structAdj}{Adj}}*\ listaAdj,\ \textcolor{keywordtype}{bool}*\ res);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{comment}{//Destroi\ a\ estrutura\ de\ dados\ representando\ um\ vértice.}}
+\DoxyCodeLine{00070\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a90745316b4325c93dd1c9aad9ede3809}{DestroiVertice}}(\mbox{\hyperlink{structVertice}{Vertice}}*\ v);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{comment}{//Elimina\ um\ vértice\ específico\ do\ grafo.}}
+\DoxyCodeLine{00073\ \mbox{\hyperlink{structGrafo}{Grafo}}*\ \mbox{\hyperlink{DeclaracaoFunc_8h_a2fba3197dbdbe7205becd2fa3f1db8c8}{EliminaVertice}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}\ codVertice,\ \textcolor{keywordtype}{bool}*\ res);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{comment}{//Destroi\ toda\ a\ estrutura\ de\ dados\ representando\ o\ grafo.}}
+\DoxyCodeLine{00076\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{DeclaracaoFunc_8h_ad5fb984955103c5d054f54408ebc4a44}{DestruirGrafo}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ grafo);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{comment}{//Guarda\ um\ grafo,\ como\ matriz\ de\ adjacência,\ num\ ficheiro\ binário}}
+\DoxyCodeLine{00079\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{DeclaracaoFunc_8h_aab7a59a1c1a7e6baea7d228ea212f55e}{GuardarGrafo}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ g,\ \textcolor{keywordtype}{char}*\ nomeFicheiro);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{comment}{//Constrói um\ grafo\ a\ partir\ de\ um\ arquivo.}}
+\DoxyCodeLine{00082\ \mbox{\hyperlink{structGrafo}{Grafo}}*\ \mbox{\hyperlink{DeclaracaoFunc_8h_aee143019ae6eb9187ffb635fadef1ecc}{ConstruirGrafo}}(\textcolor{keywordtype}{char}*\ nomeFicheiro);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{comment}{//Libera\ a\ memória\ alocada\ para\ a\ matriz.}}
+\DoxyCodeLine{00085\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{DeclaracaoFunc_8h_aa153ed95369abf405b82110f08512605}{LibertarMatriz}}(\mbox{\hyperlink{structLinha}{Linha}}*\ matriz);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{comment}{//Encontra\ caminhos\ possíveis\ entre\ dois\ vértices\ no\ grafo.}}
+\DoxyCodeLine{00088\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a75f192e6bef6e47c69243e078a3cea9c}{EncontrarCaminhos}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}\ origem,\ \textcolor{keywordtype}{int}\ destino);}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{comment}{//Realiza\ uma\ busca\ em\ profundidade\ para\ encontrar\ caminhos\ no\ grafo.}}
+\DoxyCodeLine{00091\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a46db620e4db603d13c4e19d74cf7cf51}{BuscaProfundidade}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ grafo,\ \mbox{\hyperlink{structVertice}{Vertice}}*\ vertice,\ \mbox{\hyperlink{structVertice}{Vertice}}*\ destino,\ \textcolor{keywordtype}{int}*\ caminho,\ \textcolor{keywordtype}{int}\ pos);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{comment}{//Inicializa\ o\ estado\ de\ visitação\ dos\ vértices\ do\ grafo.}}
+\DoxyCodeLine{00094\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a08f39c3726f52a117bed65fd28800f63}{InicializarVisitados}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ grafo);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \textcolor{comment}{//Mostra\ o\ caminho\ encontrado\ na\ saída\ padrão.}}
+\DoxyCodeLine{00097\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a15e7e0c2691517887ffe9a759d18d29c}{MostrarCaminho}}(\textcolor{keywordtype}{int}*\ caminho,\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{comment}{//Exporta\ o\ caminho\ encontrado\ para\ um\ arquivo.}}
+\DoxyCodeLine{00100\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a85ae747e4fa1b8dc08012d9b89078229}{ExportarCaminhoParaFicheiro}}(\textcolor{keywordtype}{int}*\ caminho,\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \textcolor{comment}{//Mostra\ a\ soma\ e\ o\ caminho\ entre\ dois\ vértices\ no\ grafo.}}
+\DoxyCodeLine{00103\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a874fe4ea300fb8b9302367b6478a9cdf}{MostraSomaECaminho}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}\ origem,\ \textcolor{keywordtype}{int}\ destino);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ \textcolor{comment}{//Calcula\ a\ soma\ máxima\ das\ linhas\ da\ matriz.}}
+\DoxyCodeLine{00106\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{DeclaracaoFunc_8h_acfb587123f9eb8d793fb2341bec7da78}{SomaMaximaCaminhos}}(\mbox{\hyperlink{structGrafo}{Grafo}}*\ grafo,\ \textcolor{keywordtype}{int}*\ nLinha);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{comment}{//Imprime\ as\ linhas\ especificadas\ de\ um\ arquivo\ na\ saída\ padrão.}}
+\DoxyCodeLine{00109\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{DeclaracaoFunc_8h_a405432d783716afca8ecbe936799eb86}{ImprimirLinhas}}(\textcolor{keywordtype}{char}*\ nomeFicheiro,\ \textcolor{keywordtype}{int}*\ linhas,\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#pragma\ endregion}}
+
+\end{DoxyCode}

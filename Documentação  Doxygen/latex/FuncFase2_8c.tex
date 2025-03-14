@@ -1,0 +1,441 @@
+\doxysection{D\+:/1ano/2sem/eda/\+LESI\+\_\+\+EDA\+\_\+27960\+\_\+\+FINAL/\+LESI\+\_\+\+EDA\+\_\+27960\+\_\+\+FINAL/\+Func\+Fase2.c File Reference}
+\hypertarget{FuncFase2_8c}{}\label{FuncFase2_8c}\index{D:/1ano/2sem/eda/LESI\_EDA\_27960\_FINAL/LESI\_EDA\_27960\_FINAL/FuncFase2.c@{D:/1ano/2sem/eda/LESI\_EDA\_27960\_FINAL/LESI\_EDA\_27960\_FINAL/FuncFase2.c}}
+
+
+Funções para manipulação de Grafos, etapa 2 do Trabalho Prático de Estruturas Avançadas de Dados.  
+
+
+{\ttfamily \#include "{}Declaracao\+Func.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FuncFase2_8c_ab39112decaa297aa9ab2c7710f1175f3}{Insere\+Vertice}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}v, \mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Insere um vértice em um grafo existente. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FuncFase2_8c_aacc500b9d770114ef6f6e72c53cda64f}{Inserir\+Adj}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, int origem, int destino, int peso, bool \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Insere uma adjacência em um grafo existente. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FuncFase2_8c_acb1f35934dfc654b59a01bd498413bc1}{Onde\+Esta\+Vertice\+Grafo}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, int id\+Vertice)
+\begin{DoxyCompactList}\small\item\em Retorna um apontador para o vértice com o identificador especificado no grafo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{FuncFase2_8c_a39e35271c25d02bd7d6deb895eb566c6}{Adjacente\+Destruir}} (\mbox{\hyperlink{structAdj}{Adj}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{structAdj}{Adj}})
+\begin{DoxyCompactList}\small\item\em Liberta a memória alocada para uma adjacência. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FuncFase2_8c_aa21f4002851f259d6bfbea299f37da73}{Elimina\+Adj}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, int origem, int destino, bool \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Elimina uma adjacência de um vértice em um grafo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structAdj}{Adj}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FuncFase2_8c_a7babc5cb568b8801ed2e6d6447750d86}{Elimina\+Todas\+Adj}} (\mbox{\hyperlink{structAdj}{Adj}} \texorpdfstring{$\ast$}{*}lista\+Adj, bool \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Elimina todas as adjacências de uma lista de adjacências. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{FuncFase2_8c_a90745316b4325c93dd1c9aad9ede3809}{Destroi\+Vertice}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}v)
+\begin{DoxyCompactList}\small\item\em Liberta a memória alocada para um vértice. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FuncFase2_8c_a2fba3197dbdbe7205becd2fa3f1db8c8}{Elimina\+Vertice}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int cod\+Vertice, bool \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Elimina um vértice e suas adjacências de um grafo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{FuncFase2_8c_ad5fb984955103c5d054f54408ebc4a44}{Destruir\+Grafo}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo)
+\begin{DoxyCompactList}\small\item\em Liberta a memória alocada para um grafo e todos os seus vértices e adjacências. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{FuncFase2_8c_aab7a59a1c1a7e6baea7d228ea212f55e}{Guardar\+Grafo}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g, char \texorpdfstring{$\ast$}{*}nome\+Ficheiro)
+\begin{DoxyCompactList}\small\item\em Guarda um grafo em um ficheiro binário. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FuncFase2_8c_aee143019ae6eb9187ffb635fadef1ecc}{Construir\+Grafo}} (char \texorpdfstring{$\ast$}{*}nome\+Ficheiro)
+\begin{DoxyCompactList}\small\item\em Constrói um grafo a partir de um ficheiro contendo uma matriz de adjacência. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{FuncFase2_8c_aa153ed95369abf405b82110f08512605}{Libertar\+Matriz}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}matriz)
+\begin{DoxyCompactList}\small\item\em Liberta a memória alocada para uma matriz de adjacência. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{FuncFase2_8c_a75f192e6bef6e47c69243e078a3cea9c}{Encontrar\+Caminhos}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int origem, int destino)
+\begin{DoxyCompactList}\small\item\em Encontra caminhos entre dois vértices em um grafo usando DFT. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{FuncFase2_8c_a46db620e4db603d13c4e19d74cf7cf51}{Busca\+Profundidade}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}vertice, \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}destino, int \texorpdfstring{$\ast$}{*}caminho, int pos)
+\begin{DoxyCompactList}\small\item\em Realiza uma busca DFT (em profundidade) a partir de um vértice em um grafo para encontrar um caminho até um vértice destino. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{FuncFase2_8c_a85ae747e4fa1b8dc08012d9b89078229}{Exportar\+Caminho\+Para\+Ficheiro}} (int \texorpdfstring{$\ast$}{*}caminho, int tamanho)
+\begin{DoxyCompactList}\small\item\em Exporta o caminho encontrado para um ficheiro. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{FuncFase2_8c_a08f39c3726f52a117bed65fd28800f63}{Inicializar\+Visitados}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo)
+\begin{DoxyCompactList}\small\item\em Inicializa todos os vértices do grafo como não visitados. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{FuncFase2_8c_a7d1e6ba87dacd0d4cf0881fb4f0e5aee}{Soma\+Caminho}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int \texorpdfstring{$\ast$}{*}caminho, int tam)
+\begin{DoxyCompactList}\small\item\em Calcula a soma dos valores dos vértices em um caminho. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{FuncFase2_8c_acfb587123f9eb8d793fb2341bec7da78}{Soma\+Maxima\+Caminhos}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int \texorpdfstring{$\ast$}{*}n\+Linha)
+\begin{DoxyCompactList}\small\item\em Calcula a soma máxima dos valores dos vértices em todos os caminhos lidos de um ficheiro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{FuncFase2_8c_af03440439693e0dab0fea2bf664748e5}{caminho\+Ja\+Exportado}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Funções para manipulação de Grafos, etapa 2 do Trabalho Prático de Estruturas Avançadas de Dados. 
+
+\begin{DoxyAuthor}{Author}
+Pedro\+Ribeiro nº27960 LESI 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{FuncFase2_8c_a39e35271c25d02bd7d6deb895eb566c6}\label{FuncFase2_8c_a39e35271c25d02bd7d6deb895eb566c6} 
+\index{FuncFase2.c@{FuncFase2.c}!AdjacenteDestruir@{AdjacenteDestruir}}
+\index{AdjacenteDestruir@{AdjacenteDestruir}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{AdjacenteDestruir()}{AdjacenteDestruir()}}
+{\footnotesize\ttfamily bool Adjacente\+Destruir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAdj}{Adj}} \texorpdfstring{$\ast$}{*}}]{Adj }\end{DoxyParamCaption})}
+
+
+
+Liberta a memória alocada para uma adjacência. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{structAdj}{Adj}} & Apontador para a adjacência a ser destruída. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a destruição foi bem-\/sucedida, false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase2_8c_a46db620e4db603d13c4e19d74cf7cf51}\label{FuncFase2_8c_a46db620e4db603d13c4e19d74cf7cf51} 
+\index{FuncFase2.c@{FuncFase2.c}!BuscaProfundidade@{BuscaProfundidade}}
+\index{BuscaProfundidade@{BuscaProfundidade}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{BuscaProfundidade()}{BuscaProfundidade()}}
+{\footnotesize\ttfamily bool Busca\+Profundidade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{vertice,  }\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{destino,  }\item[{int \texorpdfstring{$\ast$}{*}}]{caminho,  }\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Realiza uma busca DFT (em profundidade) a partir de um vértice em um grafo para encontrar um caminho até um vértice destino. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o grafo onde a busca será realizada. \\
+\hline
+{\em vertice} & Apontador para o vértice atual. \\
+\hline
+{\em destino} & Apontador para o vértice destino. \\
+\hline
+{\em caminho} & Apontador que armazena o caminho encontrado até o momento. \\
+\hline
+{\em pos} & Posição atual no vetor de caminho. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se um caminho até o destino foi encontrado, false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase2_8c_aee143019ae6eb9187ffb635fadef1ecc}\label{FuncFase2_8c_aee143019ae6eb9187ffb635fadef1ecc} 
+\index{FuncFase2.c@{FuncFase2.c}!ConstruirGrafo@{ConstruirGrafo}}
+\index{ConstruirGrafo@{ConstruirGrafo}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{ConstruirGrafo()}{ConstruirGrafo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Construir\+Grafo (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro }\end{DoxyParamCaption})}
+
+
+
+Constrói um grafo a partir de um ficheiro contendo uma matriz de adjacência. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Ficheiro} & Nome do ficheiro contendo a matriz de adjacência. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o grafo construído, ou NULL em caso de erro. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase2_8c_a90745316b4325c93dd1c9aad9ede3809}\label{FuncFase2_8c_a90745316b4325c93dd1c9aad9ede3809} 
+\index{FuncFase2.c@{FuncFase2.c}!DestroiVertice@{DestroiVertice}}
+\index{DestroiVertice@{DestroiVertice}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{DestroiVertice()}{DestroiVertice()}}
+{\footnotesize\ttfamily bool Destroi\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})}
+
+
+
+Liberta a memória alocada para um vértice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Apontador para o vértice a ser destruído. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a destruição foi bem-\/sucedida, false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase2_8c_ad5fb984955103c5d054f54408ebc4a44}\label{FuncFase2_8c_ad5fb984955103c5d054f54408ebc4a44} 
+\index{FuncFase2.c@{FuncFase2.c}!DestruirGrafo@{DestruirGrafo}}
+\index{DestruirGrafo@{DestruirGrafo}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{DestruirGrafo()}{DestruirGrafo()}}
+{\footnotesize\ttfamily bool Destruir\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo }\end{DoxyParamCaption})}
+
+
+
+Liberta a memória alocada para um grafo e todos os seus vértices e adjacências. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o grafo a ser destruído. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a destruição foi bem-\/sucedida, false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase2_8c_aa21f4002851f259d6bfbea299f37da73}\label{FuncFase2_8c_aa21f4002851f259d6bfbea299f37da73} 
+\index{FuncFase2.c@{FuncFase2.c}!EliminaAdj@{EliminaAdj}}
+\index{EliminaAdj@{EliminaAdj}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{EliminaAdj()}{EliminaAdj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Elimina\+Adj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{origem,  }\item[{int}]{destino,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Elimina uma adjacência de um vértice em um grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo onde a adjacência será eliminada. \\
+\hline
+{\em origem} & Identificador do vértice de origem da adjacência. \\
+\hline
+{\em destino} & Identificador do vértice de destino da adjacência. \\
+\hline
+{\em res} & Apontador para a variável de resultado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o grafo atualizado. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase2_8c_a7babc5cb568b8801ed2e6d6447750d86}\label{FuncFase2_8c_a7babc5cb568b8801ed2e6d6447750d86} 
+\index{FuncFase2.c@{FuncFase2.c}!EliminaTodasAdj@{EliminaTodasAdj}}
+\index{EliminaTodasAdj@{EliminaTodasAdj}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{EliminaTodasAdj()}{EliminaTodasAdj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAdj}{Adj}} \texorpdfstring{$\ast$}{*} Elimina\+Todas\+Adj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structAdj}{Adj}} \texorpdfstring{$\ast$}{*}}]{lista\+Adj,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Elimina todas as adjacências de uma lista de adjacências. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista\+Adj} & Apontador para a lista de adjacências a serem eliminadas. \\
+\hline
+{\em res} & Apontador para a variável de resultado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador nulo, indicando que todas as adjacências foram eliminadas. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase2_8c_a2fba3197dbdbe7205becd2fa3f1db8c8}\label{FuncFase2_8c_a2fba3197dbdbe7205becd2fa3f1db8c8} 
+\index{FuncFase2.c@{FuncFase2.c}!EliminaVertice@{EliminaVertice}}
+\index{EliminaVertice@{EliminaVertice}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{EliminaVertice()}{EliminaVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Elimina\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{cod\+Vertice,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Elimina um vértice e suas adjacências de um grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o grafo onde o vértice será eliminado. \\
+\hline
+{\em cod\+Vertice} & Identificador do vértice a ser eliminado. \\
+\hline
+{\em res} & Apontador para a variável de resultado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o grafo atualizado. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase2_8c_a75f192e6bef6e47c69243e078a3cea9c}\label{FuncFase2_8c_a75f192e6bef6e47c69243e078a3cea9c} 
+\index{FuncFase2.c@{FuncFase2.c}!EncontrarCaminhos@{EncontrarCaminhos}}
+\index{EncontrarCaminhos@{EncontrarCaminhos}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{EncontrarCaminhos()}{EncontrarCaminhos()}}
+{\footnotesize\ttfamily bool Encontrar\+Caminhos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{origem,  }\item[{int}]{destino }\end{DoxyParamCaption})}
+
+
+
+Encontra caminhos entre dois vértices em um grafo usando DFT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o grafo onde os caminhos serão buscados. \\
+\hline
+{\em origem} & Identificador do vértice de origem. \\
+\hline
+{\em destino} & Identificador do vértice de destino. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se algum caminho foi encontrado, false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase2_8c_a85ae747e4fa1b8dc08012d9b89078229}\label{FuncFase2_8c_a85ae747e4fa1b8dc08012d9b89078229} 
+\index{FuncFase2.c@{FuncFase2.c}!ExportarCaminhoParaFicheiro@{ExportarCaminhoParaFicheiro}}
+\index{ExportarCaminhoParaFicheiro@{ExportarCaminhoParaFicheiro}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{ExportarCaminhoParaFicheiro()}{ExportarCaminhoParaFicheiro()}}
+{\footnotesize\ttfamily int Exportar\+Caminho\+Para\+Ficheiro (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{caminho,  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Exporta o caminho encontrado para um ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caminho} & Apontador contendo os identificadores dos vértices no caminho encontrado. \\
+\hline
+{\em tamanho} & O número de vértices no caminho. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Retorna 1 se o caminho foi exportado com sucesso, -\/1 se houve erro na abertura do ficheiro. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase2_8c_aab7a59a1c1a7e6baea7d228ea212f55e}\label{FuncFase2_8c_aab7a59a1c1a7e6baea7d228ea212f55e} 
+\index{FuncFase2.c@{FuncFase2.c}!GuardarGrafo@{GuardarGrafo}}
+\index{GuardarGrafo@{GuardarGrafo}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{GuardarGrafo()}{GuardarGrafo()}}
+{\footnotesize\ttfamily bool Guardar\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro }\end{DoxyParamCaption})}
+
+
+
+Guarda um grafo em um ficheiro binário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & apontador para o grafo a ser salvo. \\
+\hline
+{\em nome\+Ficheiro} & Nome do ficheiro binário onde o grafo será guardado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se o grafo foi guardado com sucesso, false caso contrário. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase2_8c_a08f39c3726f52a117bed65fd28800f63}\label{FuncFase2_8c_a08f39c3726f52a117bed65fd28800f63} 
+\index{FuncFase2.c@{FuncFase2.c}!InicializarVisitados@{InicializarVisitados}}
+\index{InicializarVisitados@{InicializarVisitados}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{InicializarVisitados()}{InicializarVisitados()}}
+{\footnotesize\ttfamily bool Inicializar\+Visitados (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo }\end{DoxyParamCaption})}
+
+
+
+Inicializa todos os vértices do grafo como não visitados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o grafo que terá seus vértices inicializados. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{FuncFase2_8c_ab39112decaa297aa9ab2c7710f1175f3}\label{FuncFase2_8c_ab39112decaa297aa9ab2c7710f1175f3} 
+\index{FuncFase2.c@{FuncFase2.c}!InsereVertice@{InsereVertice}}
+\index{InsereVertice@{InsereVertice}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{InsereVertice()}{InsereVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Insere\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{v,  }\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Insere um vértice em um grafo existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Apontador para o vértice a ser inserido. \\
+\hline
+{\em grafo} & Apontador para o grafo onde o vértice será inserido. \\
+\hline
+{\em res} & Apontador para a variável de resultado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o grafo atualizado. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase2_8c_aacc500b9d770114ef6f6e72c53cda64f}\label{FuncFase2_8c_aacc500b9d770114ef6f6e72c53cda64f} 
+\index{FuncFase2.c@{FuncFase2.c}!InserirAdj@{InserirAdj}}
+\index{InserirAdj@{InserirAdj}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{InserirAdj()}{InserirAdj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Inserir\+Adj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{origem,  }\item[{int}]{destino,  }\item[{int}]{peso,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Insere uma adjacência em um grafo existente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo onde a adjacência será inserida. \\
+\hline
+{\em origem} & Identificador do vértice de origem da adjacência. \\
+\hline
+{\em destino} & Identificador do vértice de destino da adjacência. \\
+\hline
+{\em peso} & Peso da aresta. \\
+\hline
+{\em res} & Apontador para a variável de resultado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o grafo atualizado. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase2_8c_aa153ed95369abf405b82110f08512605}\label{FuncFase2_8c_aa153ed95369abf405b82110f08512605} 
+\index{FuncFase2.c@{FuncFase2.c}!LibertarMatriz@{LibertarMatriz}}
+\index{LibertarMatriz@{LibertarMatriz}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{LibertarMatriz()}{LibertarMatriz()}}
+{\footnotesize\ttfamily bool Libertar\+Matriz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}}]{matriz }\end{DoxyParamCaption})}
+
+
+
+Liberta a memória alocada para uma matriz de adjacência. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Apontador para a estrutura de dados representando a matriz. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{FuncFase2_8c_acb1f35934dfc654b59a01bd498413bc1}\label{FuncFase2_8c_acb1f35934dfc654b59a01bd498413bc1} 
+\index{FuncFase2.c@{FuncFase2.c}!OndeEstaVerticeGrafo@{OndeEstaVerticeGrafo}}
+\index{OndeEstaVerticeGrafo@{OndeEstaVerticeGrafo}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{OndeEstaVerticeGrafo()}{OndeEstaVerticeGrafo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Onde\+Esta\+Vertice\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{id\+Vertice }\end{DoxyParamCaption})}
+
+
+
+Retorna um apontador para o vértice com o identificador especificado no grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Apontador para o grafo onde será realizada a busca. \\
+\hline
+{\em id\+Vertice} & Identificador do vértice a ser procurado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o vértice encontrado, ou NULL se não encontrado. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase2_8c_a7d1e6ba87dacd0d4cf0881fb4f0e5aee}\label{FuncFase2_8c_a7d1e6ba87dacd0d4cf0881fb4f0e5aee} 
+\index{FuncFase2.c@{FuncFase2.c}!SomaCaminho@{SomaCaminho}}
+\index{SomaCaminho@{SomaCaminho}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{SomaCaminho()}{SomaCaminho()}}
+{\footnotesize\ttfamily int Soma\+Caminho (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int \texorpdfstring{$\ast$}{*}}]{caminho,  }\item[{int}]{tam }\end{DoxyParamCaption})}
+
+
+
+Calcula a soma dos valores dos vértices em um caminho. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o grafo onde os vértices estão localizados. \\
+\hline
+{\em caminho} & Apontador que contem os identificadores dos vértices no caminho. \\
+\hline
+{\em tam} & O número de vértices no caminho. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int A soma dos valores dos vértices no caminho, ou -\/1 se o caminho for inválido. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase2_8c_acfb587123f9eb8d793fb2341bec7da78}\label{FuncFase2_8c_acfb587123f9eb8d793fb2341bec7da78} 
+\index{FuncFase2.c@{FuncFase2.c}!SomaMaximaCaminhos@{SomaMaximaCaminhos}}
+\index{SomaMaximaCaminhos@{SomaMaximaCaminhos}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{SomaMaximaCaminhos()}{SomaMaximaCaminhos()}}
+{\footnotesize\ttfamily int Soma\+Maxima\+Caminhos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int \texorpdfstring{$\ast$}{*}}]{n\+Linha }\end{DoxyParamCaption})}
+
+
+
+Calcula a soma máxima dos valores dos vértices em todos os caminhos lidos de um ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o grafo onde os vértices estão localizados. \\
+\hline
+{\em n\+Linha} & Apontador para armazenar os índices das linhas com a maior soma. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int A soma máxima dos valores dos vértices nos caminhos, ou -\/1 se ocorrer um erro. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{FuncFase2_8c_af03440439693e0dab0fea2bf664748e5}\label{FuncFase2_8c_af03440439693e0dab0fea2bf664748e5} 
+\index{FuncFase2.c@{FuncFase2.c}!caminhoJaExportado@{caminhoJaExportado}}
+\index{caminhoJaExportado@{caminhoJaExportado}!FuncFase2.c@{FuncFase2.c}}
+\doxysubsubsection{\texorpdfstring{caminhoJaExportado}{caminhoJaExportado}}
+{\footnotesize\ttfamily bool caminho\+Ja\+Exportado = false}
+

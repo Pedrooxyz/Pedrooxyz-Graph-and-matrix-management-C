@@ -1,0 +1,63 @@
+\doxysection{Estruturas\+Dados.\+h}
+\hypertarget{BibCriacoes_2EstruturasDados_8h_source}{}\label{BibCriacoes_2EstruturasDados_8h_source}\index{D:/1ano/2sem/eda/LESI\_EDA\_27960\_FINAL/BibCriacoes/EstruturasDados.h@{D:/1ano/2sem/eda/LESI\_EDA\_27960\_FINAL/BibCriacoes/EstruturasDados.h}}
+\mbox{\hyperlink{BibCriacoes_2EstruturasDados_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*****************************************************************/}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ c\ 5}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ MAX\ 100}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#define\ MAX\_LINHAS\ 5}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#define\ MAX\_COLUNAS\ 5}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#pragma\ warning\ (disable:4996)}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#pragma\ region\ FASE\ 1\ -\/\ ex1}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structElemento}{Elemento}}\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structElemento_a83201786792501b53e667771949a8129}{valor}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structElemento}{Elemento}}*\ \mbox{\hyperlink{structElemento_a6f5fd7140a180fb9d2f9656d3733a586}{proximo}};\ \ }
+\DoxyCodeLine{00030\ \}\ \mbox{\hyperlink{BibCriacoes_2EstruturasDados_8h_aa54b01872801327b363e1bb1873a7f08}{Elemento}};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structLinha}{Linha}}\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{structElemento}{Elemento}}*\ \mbox{\hyperlink{structLinha_a5a66df58c1575b1ce509d673e272916d}{inicio}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structLinha}{Linha}}*\ \mbox{\hyperlink{structLinha_a86327c81db439d134191c1622da9eaa0}{proxima}};\ \ \ \ }
+\DoxyCodeLine{00038\ \}\ \mbox{\hyperlink{BibCriacoes_2EstruturasDados_8h_acfc73b52ebe2dd989784bf4c236c82ec}{Linha}};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#pragma\ region\ FASE\ 2\ -\/\ ex1}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAdj}{Adj}}\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structAdj_af126ceed259751781ea3b64024138f7d}{cod}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structAdj_a42cd64244a918a5ac7790523e97d1181}{peso}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structAdj_a7432ec6b760cca5a63570ce7d9f9565b}{visitado}};\ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAdj}{Adj}}*\ \mbox{\hyperlink{structAdj_ab7ce0a9b1a185b39bd24dfa7b95e32ee}{pAdj}};\ }
+\DoxyCodeLine{00052\ \}\ \mbox{\hyperlink{BibCriacoes_2EstruturasDados_8h_acd9f17cb24ce73dde34e7a6bc62f92fb}{Adj}};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00057\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structVertice}{Vertice}}\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structVertice_af126ceed259751781ea3b64024138f7d}{cod}};\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structVertice_a83201786792501b53e667771949a8129}{valor}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structVertice_a7432ec6b760cca5a63570ce7d9f9565b}{visitado}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAdj}{Adj}}*\ \mbox{\hyperlink{structVertice_ab7ce0a9b1a185b39bd24dfa7b95e32ee}{pAdj}};\ \ \ \ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structVertice}{Vertice}}*\ \mbox{\hyperlink{structVertice_adba045e2d39598502577c10843280bba}{pVertice}};\ }
+\DoxyCodeLine{00063\ \}\ \mbox{\hyperlink{BibCriacoes_2EstruturasDados_8h_a901d403606dfb55e6d42b899c05d3347}{Vertice}};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structGrafo}{Grafo}}\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ \mbox{\hyperlink{structGrafo_a331d409725571a97623b10c9a61c2d8a}{inicio}};\ \ \ \ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structGrafo_a0cdaf326a62f7df66e1a77faef821d9d}{verticesagora}};\ \ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structGrafo_aba6294862d94e736409c49982228b4fa}{totvertices}};\ \ \ \ }
+\DoxyCodeLine{00072\ \}\ \mbox{\hyperlink{BibCriacoes_2EstruturasDados_8h_adab04f64457aac52a13e71e40915bd43}{Grafo}};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \mbox{\hyperlink{structElemento}{Elemento}}*\ \mbox{\hyperlink{BibCriacoes_2EstruturasDados_8h_a53572b28e6126d2c62eb6887f8d8afc2}{CriarNumero}}(\textcolor{keywordtype}{int}\ num);}
+\DoxyCodeLine{00077\ \mbox{\hyperlink{structGrafo}{Grafo}}*\ \mbox{\hyperlink{BibCriacoes_2EstruturasDados_8h_adbc7866d77aaecbbeb86bbdb2dc6e37c}{CriarGrafo}}(\textcolor{keywordtype}{int}\ v);}
+\DoxyCodeLine{00078\ \mbox{\hyperlink{structVertice}{Vertice}}*\ \mbox{\hyperlink{BibCriacoes_2EstruturasDados_8h_ae82149ff71b1e23c597daffdb2f86a73}{CriarVertice}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00079\ \mbox{\hyperlink{structAdj}{Adj}}*\ \mbox{\hyperlink{BibCriacoes_2EstruturasDados_8h_a18e2c9e448fc51fdc6f89be463d8f8b0}{CriarAdj}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keywordtype}{int}\ peso);}
+
+\end{DoxyCode}

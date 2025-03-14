@@ -1,0 +1,124 @@
+\doxysection{D\+:/1ano/2sem/eda/\+LESI\+\_\+\+EDA\+\_\+27960\+\_\+\+FINAL/\+LESI\+\_\+\+EDA\+\_\+27960\+\_\+\+FINAL/\+IO.c File Reference}
+\hypertarget{IO_8c}{}\label{IO_8c}\index{D:/1ano/2sem/eda/LESI\_EDA\_27960\_FINAL/LESI\_EDA\_27960\_FINAL/IO.c@{D:/1ano/2sem/eda/LESI\_EDA\_27960\_FINAL/LESI\_EDA\_27960\_FINAL/IO.c}}
+
+
+Funções de output que estão na etapa 1 e 2 do Trabalho Prático de Estruturas Avançadas de Dados.  
+
+
+{\ttfamily \#include "{}Declaracao\+Func.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{IO_8c_ac8e7518c9f33f00ecff9b308b2224c0a}{Mostra\+Matriz}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}matriz)
+\begin{DoxyCompactList}\small\item\em Mostra a matriz. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{IO_8c_a1a7f3d8e78b297c9197eca4f6ce5ff4e}{Mostrar\+Grafo}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}g)
+\begin{DoxyCompactList}\small\item\em Mostra o grafo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{IO_8c_a15e7e0c2691517887ffe9a759d18d29c}{Mostrar\+Caminho}} (int \texorpdfstring{$\ast$}{*}caminho, int tamanho)
+\begin{DoxyCompactList}\small\item\em Mostra o caminho encontrado no formato de uma lista de vértices. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{IO_8c_a874fe4ea300fb8b9302367b6478a9cdf}{Mostra\+Soma\+ECaminho}} (\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}grafo, int origem, int destino)
+\begin{DoxyCompactList}\small\item\em Mostra os caminhos possíveis de um vértice de origem a um vértice de destino no grafo, a soma máxima dos valores dos vértices nesses caminhos, e exporta essas informações para um ficheiro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{IO_8c_a405432d783716afca8ecbe936799eb86}{Imprimir\+Linhas}} (char \texorpdfstring{$\ast$}{*}nome\+Ficheiro, int \texorpdfstring{$\ast$}{*}linhas, int tamanho)
+\begin{DoxyCompactList}\small\item\em Imprime no ecrã as linhas especificadas de um ficheiro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Funções de output que estão na etapa 1 e 2 do Trabalho Prático de Estruturas Avançadas de Dados. 
+
+\begin{DoxyAuthor}{Author}
+Pedro\+Ribeiro nº27960 LESI 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+May 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{IO_8c_a405432d783716afca8ecbe936799eb86}\label{IO_8c_a405432d783716afca8ecbe936799eb86} 
+\index{IO.c@{IO.c}!ImprimirLinhas@{ImprimirLinhas}}
+\index{ImprimirLinhas@{ImprimirLinhas}!IO.c@{IO.c}}
+\doxysubsubsection{\texorpdfstring{ImprimirLinhas()}{ImprimirLinhas()}}
+{\footnotesize\ttfamily void Imprimir\+Linhas (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro,  }\item[{int \texorpdfstring{$\ast$}{*}}]{linhas,  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Imprime no ecrã as linhas especificadas de um ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Ficheiro} & O nome do ficheiro a ser lido. \\
+\hline
+{\em linhas} & Um apontador contendo os números das linhas a serem impressas. \\
+\hline
+{\em tamanho} & O tamanho do apontador de linhas. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{IO_8c_ac8e7518c9f33f00ecff9b308b2224c0a}\label{IO_8c_ac8e7518c9f33f00ecff9b308b2224c0a} 
+\index{IO.c@{IO.c}!MostraMatriz@{MostraMatriz}}
+\index{MostraMatriz@{MostraMatriz}!IO.c@{IO.c}}
+\doxysubsubsection{\texorpdfstring{MostraMatriz()}{MostraMatriz()}}
+{\footnotesize\ttfamily void Mostra\+Matriz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}}]{matriz }\end{DoxyParamCaption})}
+
+
+
+Mostra a matriz. 
+
+Esta função percorre todas as linhas da matriz e imprime os elementos de cada linha na saída padrão.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Um apontador para o início da lista ligada que representa a matriz. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{IO_8c_a15e7e0c2691517887ffe9a759d18d29c}\label{IO_8c_a15e7e0c2691517887ffe9a759d18d29c} 
+\index{IO.c@{IO.c}!MostrarCaminho@{MostrarCaminho}}
+\index{MostrarCaminho@{MostrarCaminho}!IO.c@{IO.c}}
+\doxysubsubsection{\texorpdfstring{MostrarCaminho()}{MostrarCaminho()}}
+{\footnotesize\ttfamily void Mostrar\+Caminho (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{caminho,  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Mostra o caminho encontrado no formato de uma lista de vértices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caminho} & Apontador que contem os identificadores dos vértices no caminho encontrado. \\
+\hline
+{\em tamanho} & O número de vértices no caminho. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{IO_8c_a1a7f3d8e78b297c9197eca4f6ce5ff4e}\label{IO_8c_a1a7f3d8e78b297c9197eca4f6ce5ff4e} 
+\index{IO.c@{IO.c}!MostrarGrafo@{MostrarGrafo}}
+\index{MostrarGrafo@{MostrarGrafo}!IO.c@{IO.c}}
+\doxysubsubsection{\texorpdfstring{MostrarGrafo()}{MostrarGrafo()}}
+{\footnotesize\ttfamily void Mostrar\+Grafo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{g }\end{DoxyParamCaption})}
+
+
+
+Mostra o grafo. 
+
+Esta função imprime na tela a representação do grafo, mostrando os vértices e as suas adjacências.
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Ponteiro para o grafo a ser mostrado. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{IO_8c_a874fe4ea300fb8b9302367b6478a9cdf}\label{IO_8c_a874fe4ea300fb8b9302367b6478a9cdf} 
+\index{IO.c@{IO.c}!MostraSomaECaminho@{MostraSomaECaminho}}
+\index{MostraSomaECaminho@{MostraSomaECaminho}!IO.c@{IO.c}}
+\doxysubsubsection{\texorpdfstring{MostraSomaECaminho()}{MostraSomaECaminho()}}
+{\footnotesize\ttfamily void Mostra\+Soma\+ECaminho (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{int}]{origem,  }\item[{int}]{destino }\end{DoxyParamCaption})}
+
+
+
+Mostra os caminhos possíveis de um vértice de origem a um vértice de destino no grafo, a soma máxima dos valores dos vértices nesses caminhos, e exporta essas informações para um ficheiro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & Apontador para o grafo onde os vértices estão localizados. \\
+\hline
+{\em origem} & Identificador do vértice de origem. \\
+\hline
+{\em destino} & Identificador do vértice de destino. \\
+\hline
+\end{DoxyParams}

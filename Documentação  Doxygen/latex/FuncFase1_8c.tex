@@ -1,0 +1,229 @@
+\doxysection{D\+:/1ano/2sem/eda/\+LESI\+\_\+\+EDA\+\_\+27960\+\_\+\+FINAL/\+LESI\+\_\+\+EDA\+\_\+27960\+\_\+\+FINAL/\+Func\+Fase1.c File Reference}
+\hypertarget{FuncFase1_8c}{}\label{FuncFase1_8c}\index{D:/1ano/2sem/eda/LESI\_EDA\_27960\_FINAL/LESI\_EDA\_27960\_FINAL/FuncFase1.c@{D:/1ano/2sem/eda/LESI\_EDA\_27960\_FINAL/LESI\_EDA\_27960\_FINAL/FuncFase1.c}}
+{\ttfamily \#include "{}Declaracao\+Func.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{FuncFase1_8c_a584b938c6d5a0679e8bf13e914a81ecf}{Insere\+Elemento}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}linha, int valor)
+\begin{DoxyCompactList}\small\item\em Insere um novo elemento contendo um número no final de uma linha da matriz. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FuncFase1_8c_aeae6f88356f305873151d56838c69b52}{Carregar\+Matriz}} (char \texorpdfstring{$\ast$}{*}nome\+Ficheiro)
+\begin{DoxyCompactList}\small\item\em Carrega uma matriz a partir de um ficheiro. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{FuncFase1_8c_a91bd98c9194388be0e89a9abad531bec}{Alterar\+Valor}} (\mbox{\hyperlink{structElemento}{Elemento}} \texorpdfstring{$\ast$}{*}matriz, int num\+Para\+Mudar, int num\+Novo)
+\begin{DoxyCompactList}\small\item\em Altera um valor específico em todos os elementos de uma matriz. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{FuncFase1_8c_a1891711936bf2493e1442a9a9be9bfe4}{Insere\+Linha}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}matriz, int \texorpdfstring{$\ast$}{*}valores, int num\+Colunas)
+\begin{DoxyCompactList}\small\item\em Insere uma nova linha na matriz na lista ligada. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{FuncFase1_8c_a6aa5c0f5141b65bb9daa3133d98af9ea}{Inserir\+Coluna\+Fim}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}matriz, int \texorpdfstring{$\ast$}{*}valores\+Coluna, int tamanho)
+\begin{DoxyCompactList}\small\item\em Insere uma nova coluna no final de todas as linhas da matriz. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{FuncFase1_8c_a529c8d613519385107cbc6bd2c2d039d}{Inserir\+Coluna}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}matriz, int \texorpdfstring{$\ast$}{*}valores\+Coluna, int posicao)
+\begin{DoxyCompactList}\small\item\em Insere uma nova coluna na posição especificada em todas as linhas da matriz representada por uma lista ligada. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{FuncFase1_8c_a5217c4245d5ba74aa94124b483d25058}{Remove\+Linha}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}matriz, int pos)
+\begin{DoxyCompactList}\small\item\em Remove uma linha da lista ligada. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{FuncFase1_8c_a692d4dcae2f82fdff0c205f4f4940ae4}{Remover\+Coluna}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}matriz, int posicao)
+\begin{DoxyCompactList}\small\item\em Remove a coluna na posição especificada de todas as linhas da matriz. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{FuncFase1_8c_a11850e4a4f19d3adee6800c6acda9a1e}{Soma\+Maxima}} (\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}matriz)
+\begin{DoxyCompactList}\small\item\em Calcula a soma dos valores máximos de cada linha em uma matriz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{FuncFase1_8c_a91bd98c9194388be0e89a9abad531bec}\label{FuncFase1_8c_a91bd98c9194388be0e89a9abad531bec} 
+\index{FuncFase1.c@{FuncFase1.c}!AlterarValor@{AlterarValor}}
+\index{AlterarValor@{AlterarValor}!FuncFase1.c@{FuncFase1.c}}
+\doxysubsubsection{\texorpdfstring{AlterarValor()}{AlterarValor()}}
+{\footnotesize\ttfamily bool Alterar\+Valor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structElemento}{Elemento}} \texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int}]{num\+Para\+Mudar,  }\item[{int}]{num\+Novo }\end{DoxyParamCaption})}
+
+
+
+Altera um valor específico em todos os elementos de uma matriz. 
+
+Esta função percorre todos os elementos da lista ligada e substitui um valor específico por outro.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Um apontador para o início da lista ligada. \\
+\hline
+{\em num\+Para\+Mudar} & O valor a ser alterado em todos os elementos da matriz. \\
+\hline
+{\em num\+Novo} & O novo valor que substituirá o valor a ser alterado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se pelo menos um valor foi alterado com sucesso, false se a matriz estiver vazia. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase1_8c_aeae6f88356f305873151d56838c69b52}\label{FuncFase1_8c_aeae6f88356f305873151d56838c69b52} 
+\index{FuncFase1.c@{FuncFase1.c}!CarregarMatriz@{CarregarMatriz}}
+\index{CarregarMatriz@{CarregarMatriz}!FuncFase1.c@{FuncFase1.c}}
+\doxysubsubsection{\texorpdfstring{CarregarMatriz()}{CarregarMatriz()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*} Carregar\+Matriz (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{nome\+Ficheiro }\end{DoxyParamCaption})}
+
+
+
+Carrega uma matriz a partir de um ficheiro. 
+
+Esta função lê os valores de uma matriz armazenada em um ficheiro e cria uma lista ligada com essa matriz. Cada linha do ficheiro representa uma linha da matriz, com os valores separados por ponto e vírgula (;).
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Ficheiro} & O nome do ficheiro que contém os dados da matriz a ser carregada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um apontador para a lista ligada que representa a matriz carregada, ou NULL se houver falha ao abrir o ficheiro.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Esta função assume que o arquivo está no formato correto, com valores separados por ponto e vírgula e uma linha por linha. Se ocorrer algum erro durante a leitura do ficheiro ou alocação de memória, a função retorna NULL. 
+\end{DoxyNote}
+\Hypertarget{FuncFase1_8c_a584b938c6d5a0679e8bf13e914a81ecf}\label{FuncFase1_8c_a584b938c6d5a0679e8bf13e914a81ecf} 
+\index{FuncFase1.c@{FuncFase1.c}!InsereElemento@{InsereElemento}}
+\index{InsereElemento@{InsereElemento}!FuncFase1.c@{FuncFase1.c}}
+\doxysubsubsection{\texorpdfstring{InsereElemento()}{InsereElemento()}}
+{\footnotesize\ttfamily bool Insere\+Elemento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}}]{linha,  }\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+Insere um novo elemento contendo um número no final de uma linha da matriz. 
+
+Esta função aloca memória para um novo elemento da lista ligada e atribui o valor especificado a ele. O novo elemento é inserido no final da linha especificada.
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & Um apontador para a linha onde o novo elemento será inserido. \\
+\hline
+{\em valor} & O valor a ser atribuído ao novo elemento. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se o novo elemento foi inserido com sucesso, false se a alocação de memória falhou. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase1_8c_a1891711936bf2493e1442a9a9be9bfe4}\label{FuncFase1_8c_a1891711936bf2493e1442a9a9be9bfe4} 
+\index{FuncFase1.c@{FuncFase1.c}!InsereLinha@{InsereLinha}}
+\index{InsereLinha@{InsereLinha}!FuncFase1.c@{FuncFase1.c}}
+\doxysubsubsection{\texorpdfstring{InsereLinha()}{InsereLinha()}}
+{\footnotesize\ttfamily bool Insere\+Linha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int \texorpdfstring{$\ast$}{*}}]{valores,  }\item[{int}]{num\+Colunas }\end{DoxyParamCaption})}
+
+
+
+Insere uma nova linha na matriz na lista ligada. 
+
+Esta função aloca memória para uma nova linha da matriz e insere os valores especificados nessa linha. A nova linha é adicionada ao final da matriz.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Um apontador para o apontaador do início da lista ligada. \\
+\hline
+{\em valores} & Um array de inteiros contendo os valores a serem inseridos na nova linha. \\
+\hline
+{\em num\+Colunas} & O número de colunas na nova linha. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a nova linha foi inserida com sucesso, false se houve falha na alocação de memória. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase1_8c_a529c8d613519385107cbc6bd2c2d039d}\label{FuncFase1_8c_a529c8d613519385107cbc6bd2c2d039d} 
+\index{FuncFase1.c@{FuncFase1.c}!InserirColuna@{InserirColuna}}
+\index{InserirColuna@{InserirColuna}!FuncFase1.c@{FuncFase1.c}}
+\doxysubsubsection{\texorpdfstring{InserirColuna()}{InserirColuna()}}
+{\footnotesize\ttfamily bool Inserir\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int \texorpdfstring{$\ast$}{*}}]{valores\+Coluna,  }\item[{int}]{posicao }\end{DoxyParamCaption})}
+
+
+
+Insere uma nova coluna na posição especificada em todas as linhas da matriz representada por uma lista ligada. 
+
+Esta função percorre todas as linhas da matriz e insere os valores especificados como uma nova coluna na posição indicada.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Um apontador para o início da lista ligada que representa a matriz. \\
+\hline
+{\em valores\+Coluna} & Um array de inteiros que contem os valores a serem inseridos como uma nova coluna. \\
+\hline
+{\em posicao} & A posição na qual a nova coluna será inserida.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a nova coluna foi inserida com sucesso em todas as linhas, false se houve falha na alocação de memória. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase1_8c_a6aa5c0f5141b65bb9daa3133d98af9ea}\label{FuncFase1_8c_a6aa5c0f5141b65bb9daa3133d98af9ea} 
+\index{FuncFase1.c@{FuncFase1.c}!InserirColunaFim@{InserirColunaFim}}
+\index{InserirColunaFim@{InserirColunaFim}!FuncFase1.c@{FuncFase1.c}}
+\doxysubsubsection{\texorpdfstring{InserirColunaFim()}{InserirColunaFim()}}
+{\footnotesize\ttfamily bool Inserir\+Coluna\+Fim (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int \texorpdfstring{$\ast$}{*}}]{valores\+Coluna,  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+
+
+Insere uma nova coluna no final de todas as linhas da matriz. 
+
+Esta função percorre todas as linhas da matriz e insere os valores especificados como uma nova coluna no final de cada linha.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Um apontador para o início da lista ligada que representa a matriz. \\
+\hline
+{\em valores\+Coluna} & Um array de inteiros que contem os valores a serem inseridos como uma nova coluna. \\
+\hline
+{\em tamanho} & O número de elementos no array de valores\+Coluna. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{FuncFase1_8c_a5217c4245d5ba74aa94124b483d25058}\label{FuncFase1_8c_a5217c4245d5ba74aa94124b483d25058} 
+\index{FuncFase1.c@{FuncFase1.c}!RemoveLinha@{RemoveLinha}}
+\index{RemoveLinha@{RemoveLinha}!FuncFase1.c@{FuncFase1.c}}
+\doxysubsubsection{\texorpdfstring{RemoveLinha()}{RemoveLinha()}}
+{\footnotesize\ttfamily bool Remove\+Linha (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+Remove uma linha da lista ligada. 
+
+Esta função remove a linha na posição especificada da matriz.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Um apontador para o apontador do início da lista ligada. \\
+\hline
+{\em pos} & A posição da linha a ser removida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a linha foi removida com sucesso, false se a posição especificada for inválida ou se a matriz estiver vazia. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase1_8c_a692d4dcae2f82fdff0c205f4f4940ae4}\label{FuncFase1_8c_a692d4dcae2f82fdff0c205f4f4940ae4} 
+\index{FuncFase1.c@{FuncFase1.c}!RemoverColuna@{RemoverColuna}}
+\index{RemoverColuna@{RemoverColuna}!FuncFase1.c@{FuncFase1.c}}
+\doxysubsubsection{\texorpdfstring{RemoverColuna()}{RemoverColuna()}}
+{\footnotesize\ttfamily bool Remover\+Coluna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}}]{matriz,  }\item[{int}]{posicao }\end{DoxyParamCaption})}
+
+
+
+Remove a coluna na posição especificada de todas as linhas da matriz. 
+
+Esta função percorre todas as linhas da matriz e remove o elemento na posição indicada.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Um apontador para o início da lista ligada que representa a matriz. \\
+\hline
+{\em posicao} & A posição da coluna a ser removida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a coluna foi removida com sucesso de todas as linhas, false se a posição especificada for inválida ou se a matriz estiver vazia. 
+\end{DoxyReturn}
+\Hypertarget{FuncFase1_8c_a11850e4a4f19d3adee6800c6acda9a1e}\label{FuncFase1_8c_a11850e4a4f19d3adee6800c6acda9a1e} 
+\index{FuncFase1.c@{FuncFase1.c}!SomaMaxima@{SomaMaxima}}
+\index{SomaMaxima@{SomaMaxima}!FuncFase1.c@{FuncFase1.c}}
+\doxysubsubsection{\texorpdfstring{SomaMaxima()}{SomaMaxima()}}
+{\footnotesize\ttfamily int Soma\+Maxima (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLinha}{Linha}} \texorpdfstring{$\ast$}{*}}]{matriz }\end{DoxyParamCaption})}
+
+
+
+Calcula a soma dos valores máximos de cada linha em uma matriz. 
+
+Esta função percorre todas as linhas da matriz e calcula a soma dos valores máximos de cada linha.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matriz} & Um apontador para o início da lista ligada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A soma dos valores máximos de todas as linhas da matriz, ou -\/1 se a matriz estiver vazia. 
+\end{DoxyReturn}

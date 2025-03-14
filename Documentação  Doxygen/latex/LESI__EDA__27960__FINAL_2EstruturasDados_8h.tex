@@ -1,0 +1,201 @@
+\doxysection{D\+:/1ano/2sem/eda/\+LESI\+\_\+\+EDA\+\_\+27960\+\_\+\+FINAL/\+LESI\+\_\+\+EDA\+\_\+27960\+\_\+\+FINAL/\+Estruturas\+Dados.h File Reference}
+\hypertarget{LESI__EDA__27960__FINAL_2EstruturasDados_8h}{}\label{LESI__EDA__27960__FINAL_2EstruturasDados_8h}\index{D:/1ano/2sem/eda/LESI\_EDA\_27960\_FINAL/LESI\_EDA\_27960\_FINAL/EstruturasDados.h@{D:/1ano/2sem/eda/LESI\_EDA\_27960\_FINAL/LESI\_EDA\_27960\_FINAL/EstruturasDados.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structElemento}{Elemento}}
+\begin{DoxyCompactList}\small\item\em Estrutura para representar um elemento de uma linha da matriz. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structLinha}{Linha}}
+\begin{DoxyCompactList}\small\item\em Estrutura para representar uma linha da matriz. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structAdj}{Adj}}
+\begin{DoxyCompactList}\small\item\em Estrutura para representar os vértices adjacentes. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structVertice}{Vertice}}
+\begin{DoxyCompactList}\small\item\em Estrutura para representar os vértices do grafo. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structGrafo}{Grafo}}
+\begin{DoxyCompactList}\small\item\em Estrutura para representar o grafo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{LESI__EDA__27960__FINAL_2EstruturasDados_8h_aafc737ea9ef91f59cf9acd287fb8d085}{c}}~5
+\item 
+\#define \mbox{\hyperlink{LESI__EDA__27960__FINAL_2EstruturasDados_8h_a392fb874e547e582e9c66a08a1f23326}{MAX}}~100
+\item 
+\#define \mbox{\hyperlink{LESI__EDA__27960__FINAL_2EstruturasDados_8h_ab44f6d43935e7b204b295865fc8c1edc}{MAX\+\_\+\+LINHAS}}~5
+\item 
+\#define \mbox{\hyperlink{LESI__EDA__27960__FINAL_2EstruturasDados_8h_ad624bf76d9366faecf9041ef6ffffcb9}{MAX\+\_\+\+COLUNAS}}~5
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct Elemento \mbox{\hyperlink{LESI__EDA__27960__FINAL_2EstruturasDados_8h_aa54b01872801327b363e1bb1873a7f08}{Elemento}}
+\begin{DoxyCompactList}\small\item\em Estrutura para representar um elemento de uma linha da matriz. \end{DoxyCompactList}\item 
+typedef struct Linha \mbox{\hyperlink{LESI__EDA__27960__FINAL_2EstruturasDados_8h_acfc73b52ebe2dd989784bf4c236c82ec}{Linha}}
+\begin{DoxyCompactList}\small\item\em Estrutura para representar uma linha da matriz. \end{DoxyCompactList}\item 
+typedef struct Adj \mbox{\hyperlink{LESI__EDA__27960__FINAL_2EstruturasDados_8h_acd9f17cb24ce73dde34e7a6bc62f92fb}{Adj}}
+\begin{DoxyCompactList}\small\item\em Estrutura para representar os vértices adjacentes. \end{DoxyCompactList}\item 
+typedef struct Vertice \mbox{\hyperlink{LESI__EDA__27960__FINAL_2EstruturasDados_8h_a901d403606dfb55e6d42b899c05d3347}{Vertice}}
+\begin{DoxyCompactList}\small\item\em Estrutura para representar os vértices do grafo. \end{DoxyCompactList}\item 
+typedef struct Grafo \mbox{\hyperlink{LESI__EDA__27960__FINAL_2EstruturasDados_8h_adab04f64457aac52a13e71e40915bd43}{Grafo}}
+\begin{DoxyCompactList}\small\item\em Estrutura para representar o grafo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structElemento}{Elemento}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{LESI__EDA__27960__FINAL_2EstruturasDados_8h_a53572b28e6126d2c62eb6887f8d8afc2}{Criar\+Numero}} (int num)
+\begin{DoxyCompactList}\small\item\em Cria um novo elemento contendo um número. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{LESI__EDA__27960__FINAL_2EstruturasDados_8h_adbc7866d77aaecbbeb86bbdb2dc6e37c}{Criar\+Grafo}} (int v)
+\begin{DoxyCompactList}\small\item\em Cria um novo grafo com um número específico de vértices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{LESI__EDA__27960__FINAL_2EstruturasDados_8h_ae82149ff71b1e23c597daffdb2f86a73}{Criar\+Vertice}} (int id)
+\item 
+\mbox{\hyperlink{structAdj}{Adj}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{LESI__EDA__27960__FINAL_2EstruturasDados_8h_a18e2c9e448fc51fdc6f89be463d8f8b0}{Criar\+Adj}} (int id, int peso)
+\begin{DoxyCompactList}\small\item\em Cria uma nova adjacência com um identificador e peso específicos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{LESI__EDA__27960__FINAL_2EstruturasDados_8h_aafc737ea9ef91f59cf9acd287fb8d085}\label{LESI__EDA__27960__FINAL_2EstruturasDados_8h_aafc737ea9ef91f59cf9acd287fb8d085} 
+\index{EstruturasDados.h@{EstruturasDados.h}!c@{c}}
+\index{c@{c}!EstruturasDados.h@{EstruturasDados.h}}
+\doxysubsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily \#define c~5}
+
+\Hypertarget{LESI__EDA__27960__FINAL_2EstruturasDados_8h_a392fb874e547e582e9c66a08a1f23326}\label{LESI__EDA__27960__FINAL_2EstruturasDados_8h_a392fb874e547e582e9c66a08a1f23326} 
+\index{EstruturasDados.h@{EstruturasDados.h}!MAX@{MAX}}
+\index{MAX@{MAX}!EstruturasDados.h@{EstruturasDados.h}}
+\doxysubsubsection{\texorpdfstring{MAX}{MAX}}
+{\footnotesize\ttfamily \#define MAX~100}
+
+\Hypertarget{LESI__EDA__27960__FINAL_2EstruturasDados_8h_ad624bf76d9366faecf9041ef6ffffcb9}\label{LESI__EDA__27960__FINAL_2EstruturasDados_8h_ad624bf76d9366faecf9041ef6ffffcb9} 
+\index{EstruturasDados.h@{EstruturasDados.h}!MAX\_COLUNAS@{MAX\_COLUNAS}}
+\index{MAX\_COLUNAS@{MAX\_COLUNAS}!EstruturasDados.h@{EstruturasDados.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_COLUNAS}{MAX\_COLUNAS}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+COLUNAS~5}
+
+\Hypertarget{LESI__EDA__27960__FINAL_2EstruturasDados_8h_ab44f6d43935e7b204b295865fc8c1edc}\label{LESI__EDA__27960__FINAL_2EstruturasDados_8h_ab44f6d43935e7b204b295865fc8c1edc} 
+\index{EstruturasDados.h@{EstruturasDados.h}!MAX\_LINHAS@{MAX\_LINHAS}}
+\index{MAX\_LINHAS@{MAX\_LINHAS}!EstruturasDados.h@{EstruturasDados.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_LINHAS}{MAX\_LINHAS}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+LINHAS~5}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{LESI__EDA__27960__FINAL_2EstruturasDados_8h_acd9f17cb24ce73dde34e7a6bc62f92fb}\label{LESI__EDA__27960__FINAL_2EstruturasDados_8h_acd9f17cb24ce73dde34e7a6bc62f92fb} 
+\index{EstruturasDados.h@{EstruturasDados.h}!Adj@{Adj}}
+\index{Adj@{Adj}!EstruturasDados.h@{EstruturasDados.h}}
+\doxysubsubsection{\texorpdfstring{Adj}{Adj}}
+{\footnotesize\ttfamily typedef struct Adj Adj}
+
+
+
+Estrutura para representar os vértices adjacentes. 
+
+\Hypertarget{LESI__EDA__27960__FINAL_2EstruturasDados_8h_aa54b01872801327b363e1bb1873a7f08}\label{LESI__EDA__27960__FINAL_2EstruturasDados_8h_aa54b01872801327b363e1bb1873a7f08} 
+\index{EstruturasDados.h@{EstruturasDados.h}!Elemento@{Elemento}}
+\index{Elemento@{Elemento}!EstruturasDados.h@{EstruturasDados.h}}
+\doxysubsubsection{\texorpdfstring{Elemento}{Elemento}}
+{\footnotesize\ttfamily typedef struct Elemento Elemento}
+
+
+
+Estrutura para representar um elemento de uma linha da matriz. 
+
+\Hypertarget{LESI__EDA__27960__FINAL_2EstruturasDados_8h_adab04f64457aac52a13e71e40915bd43}\label{LESI__EDA__27960__FINAL_2EstruturasDados_8h_adab04f64457aac52a13e71e40915bd43} 
+\index{EstruturasDados.h@{EstruturasDados.h}!Grafo@{Grafo}}
+\index{Grafo@{Grafo}!EstruturasDados.h@{EstruturasDados.h}}
+\doxysubsubsection{\texorpdfstring{Grafo}{Grafo}}
+{\footnotesize\ttfamily typedef struct Grafo Grafo}
+
+
+
+Estrutura para representar o grafo. 
+
+\Hypertarget{LESI__EDA__27960__FINAL_2EstruturasDados_8h_acfc73b52ebe2dd989784bf4c236c82ec}\label{LESI__EDA__27960__FINAL_2EstruturasDados_8h_acfc73b52ebe2dd989784bf4c236c82ec} 
+\index{EstruturasDados.h@{EstruturasDados.h}!Linha@{Linha}}
+\index{Linha@{Linha}!EstruturasDados.h@{EstruturasDados.h}}
+\doxysubsubsection{\texorpdfstring{Linha}{Linha}}
+{\footnotesize\ttfamily typedef struct Linha Linha}
+
+
+
+Estrutura para representar uma linha da matriz. 
+
+\Hypertarget{LESI__EDA__27960__FINAL_2EstruturasDados_8h_a901d403606dfb55e6d42b899c05d3347}\label{LESI__EDA__27960__FINAL_2EstruturasDados_8h_a901d403606dfb55e6d42b899c05d3347} 
+\index{EstruturasDados.h@{EstruturasDados.h}!Vertice@{Vertice}}
+\index{Vertice@{Vertice}!EstruturasDados.h@{EstruturasDados.h}}
+\doxysubsubsection{\texorpdfstring{Vertice}{Vertice}}
+{\footnotesize\ttfamily typedef struct Vertice Vertice}
+
+
+
+Estrutura para representar os vértices do grafo. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{LESI__EDA__27960__FINAL_2EstruturasDados_8h_a18e2c9e448fc51fdc6f89be463d8f8b0}\label{LESI__EDA__27960__FINAL_2EstruturasDados_8h_a18e2c9e448fc51fdc6f89be463d8f8b0} 
+\index{EstruturasDados.h@{EstruturasDados.h}!CriarAdj@{CriarAdj}}
+\index{CriarAdj@{CriarAdj}!EstruturasDados.h@{EstruturasDados.h}}
+\doxysubsubsection{\texorpdfstring{CriarAdj()}{CriarAdj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structAdj}{Adj}} \texorpdfstring{$\ast$}{*} Criar\+Adj (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{peso }\end{DoxyParamCaption})}
+
+
+
+Cria uma nova adjacência com um identificador e peso específicos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador do vértice adjacente. \\
+\hline
+{\em peso} & Peso da aresta. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para a adjacência criada. 
+\end{DoxyReturn}
+\Hypertarget{LESI__EDA__27960__FINAL_2EstruturasDados_8h_adbc7866d77aaecbbeb86bbdb2dc6e37c}\label{LESI__EDA__27960__FINAL_2EstruturasDados_8h_adbc7866d77aaecbbeb86bbdb2dc6e37c} 
+\index{EstruturasDados.h@{EstruturasDados.h}!CriarGrafo@{CriarGrafo}}
+\index{CriarGrafo@{CriarGrafo}!EstruturasDados.h@{EstruturasDados.h}}
+\doxysubsubsection{\texorpdfstring{CriarGrafo()}{CriarGrafo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGrafo}{Grafo}} \texorpdfstring{$\ast$}{*} Criar\+Grafo (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+Cria um novo grafo com um número específico de vértices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Número de vértices do grafo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Apontador para o grafo criado. 
+\end{DoxyReturn}
+\Hypertarget{LESI__EDA__27960__FINAL_2EstruturasDados_8h_a53572b28e6126d2c62eb6887f8d8afc2}\label{LESI__EDA__27960__FINAL_2EstruturasDados_8h_a53572b28e6126d2c62eb6887f8d8afc2} 
+\index{EstruturasDados.h@{EstruturasDados.h}!CriarNumero@{CriarNumero}}
+\index{CriarNumero@{CriarNumero}!EstruturasDados.h@{EstruturasDados.h}}
+\doxysubsubsection{\texorpdfstring{CriarNumero()}{CriarNumero()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structElemento}{Elemento}} \texorpdfstring{$\ast$}{*} Criar\+Numero (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Cria um novo elemento contendo um número. 
+
+Esta função aloca memória para um novo elemento da lista ligada e atribui o valor especificado a ele.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & O número a ser atribuído ao novo elemento. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Um apontador para o novo elemento criado, ou NULL se a alocação de memória falhar. 
+\end{DoxyReturn}
+\Hypertarget{LESI__EDA__27960__FINAL_2EstruturasDados_8h_ae82149ff71b1e23c597daffdb2f86a73}\label{LESI__EDA__27960__FINAL_2EstruturasDados_8h_ae82149ff71b1e23c597daffdb2f86a73} 
+\index{EstruturasDados.h@{EstruturasDados.h}!CriarVertice@{CriarVertice}}
+\index{CriarVertice@{CriarVertice}!EstruturasDados.h@{EstruturasDados.h}}
+\doxysubsubsection{\texorpdfstring{CriarVertice()}{CriarVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Criar\+Vertice (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+

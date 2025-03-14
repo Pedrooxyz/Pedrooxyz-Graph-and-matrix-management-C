@@ -1,0 +1,17 @@
+﻿  FuncFase1.c
+D:\1ano\2sem\eda\TrabII_ESI_EDA_PedroMiguelCardosoRibeiro_27960\TrabII_ESI_EDA_PedroMiguelCardosoRibeiro_27960\FuncFase1.c(112,12): warning C4133: 'inicializando': tipos incompatíveis - de 'Elemento *' para 'Linha *'
+  FuncFase2.c
+D:\1ano\2sem\eda\TrabII_ESI_EDA_PedroMiguelCardosoRibeiro_27960\TrabII_ESI_EDA_PedroMiguelCardosoRibeiro_27960\FuncFase2.c(287,9): warning C4068: pragma 'enregion' desconhecido
+D:\1ano\2sem\eda\TrabII_ESI_EDA_PedroMiguelCardosoRibeiro_27960\TrabII_ESI_EDA_PedroMiguelCardosoRibeiro_27960\FuncFase2.c(347,58): warning C4020: 'CriarVertice': muitos parâmetros reais
+D:\1ano\2sem\eda\TrabII_ESI_EDA_PedroMiguelCardosoRibeiro_27960\TrabII_ESI_EDA_PedroMiguelCardosoRibeiro_27960\FuncFase2.c(526,15): warning C4047: '==': 'int' difere em níveis de indireção de 'void *'
+  IO.c
+  Main.c
+D:\1ano\2sem\eda\TrabII_ESI_EDA_PedroMiguelCardosoRibeiro_27960\TrabII_ESI_EDA_PedroMiguelCardosoRibeiro_27960\Main.c(59,33): warning C4133: 'função': tipos incompatíveis - de 'Linha *' para 'Elemento *'
+D:\1ano\2sem\eda\TrabII_ESI_EDA_PedroMiguelCardosoRibeiro_27960\TrabII_ESI_EDA_PedroMiguelCardosoRibeiro_27960\Main.c(112,50): warning C4020: 'CriarVertice': muitos parâmetros reais
+  Gerando Código...
+D:\1ano\2sem\eda\TrabII_ESI_EDA_PedroMiguelCardosoRibeiro_27960\TrabII_ESI_EDA_PedroMiguelCardosoRibeiro_27960\FuncFase1.c(222): warning C4715: 'InserirColuna': nem todos os caminhos de controle retornam um valor
+BibCriacoes.lib(CriacaoElemento.obj) : warning LNK4099: PDB '' não foi encontrado 'BibCriacoes.lib(CriacaoElemento.obj)' ou no ''; vinculando objeto quando quando sem nenhuma informação de depuração
+BibCriacoes.lib(CriacaoGrafo.obj) : warning LNK4099: PDB '' não foi encontrado 'BibCriacoes.lib(CriacaoGrafo.obj)' ou no ''; vinculando objeto quando quando sem nenhuma informação de depuração
+BibCriacoes.lib(CriacaoVertice.obj) : warning LNK4099: PDB '' não foi encontrado 'BibCriacoes.lib(CriacaoVertice.obj)' ou no ''; vinculando objeto quando quando sem nenhuma informação de depuração
+BibCriacoes.lib(CriacaoAdj.obj) : warning LNK4099: PDB '' não foi encontrado 'BibCriacoes.lib(CriacaoAdj.obj)' ou no ''; vinculando objeto quando quando sem nenhuma informação de depuração
+  LESI_EDA_27960_FINAL.vcxproj -> D:\1ano\2sem\eda\TrabII_ESI_EDA_PedroMiguelCardosoRibeiro_27960\TrabII_ESI_EDA_PedroMiguelCardosoRibeiro_27960\x64\Debug\LESI_EDA_27960_FINAL.exe
